@@ -12,8 +12,12 @@ export default defineNuxtConfig({
         config.plugins.push(vuetify({ autoImport: true }))
       })
     },
+    '@nuxt/content',
     // ...
   ],
+  content: {
+    // ... options
+  },
   vite: {
     vue: {
       template: {
