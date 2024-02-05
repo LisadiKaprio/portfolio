@@ -1,3 +1,25 @@
-.v-btn{
-    background-color: aquamarine !important;
+$background: #f7f7f7;
+$primary: #dc740b;
+$color-secondary: #e6d4a4;
+$dark: #1e1104;
+
+// h1, h2 {
+//   font-family: 'Bebas Neue', Impact, sans-serif;
+//   font-weight: 500;
+// }
+
+// h3 {
+//   font-family: "Roboto Condensed";
+//   font-size: 18px;
+//   text-transform: uppercase;
+// }
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: scale(0.8);
 }

@@ -4,9 +4,40 @@ import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 
+const lisaTheme = {
+  dark: false,
+  colors: {
+    background: '#dc740b',
+    primary: '#dc740b',
+  },
+  variables: {
+    'border-color': '#000000',
+    // 'border-opacity': 0.12,
+    // 'high-emphasis-opacity': 0.87,
+    // 'medium-emphasis-opacity': 0.60,
+    // 'disabled-opacity': 0.38,
+    // 'idle-opacity': 0.04,
+    // 'hover-opacity': 0.04,
+    // 'focus-opacity': 0.12,
+    // 'selected-opacity': 0.08,
+    // 'activated-opacity': 0.12,
+    // 'pressed-opacity': 0.12,
+    // 'dragged-opacity': 0.08,
+    // 'theme-kbd': '#212529',
+    // 'theme-on-kbd': '#FFFFFF',
+    // 'theme-code': '#F5F5F5',
+    // 'theme-on-code': '#000000',
+  },
+}
+
 export default defineNuxtPlugin((app) => {
-    const vuetify = createVuetify({
-        // ... your configuration
-    })
-    app.vueApp.use(vuetify)
+  const vuetify = createVuetify({
+    theme: {
+      defaultTheme: 'lisaTheme',
+      themes: {
+        lisaTheme,
+      },
+    },
+  })
+  app.vueApp.use(vuetify)
 })

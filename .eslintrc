@@ -16,6 +16,7 @@
 	},
 	"rules": {
 		"vue/html-indent": "off",
+		"no-console": "off",
 		"semi": [
 			"error",
 			"never"
