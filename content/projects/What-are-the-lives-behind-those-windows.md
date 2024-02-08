@@ -1,6 +1,6 @@
 ---
 title: What are the lives behind these windows
-description: 2D Interactive Story
+subtitle: 2D Interactive Story
 created: 2023-03-01
 cover: chat-village-cover.jpg
 ---

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
+
 const { item } = defineProps(['item']) as ParsedContent
 </script>
 
@@ -10,7 +12,7 @@ const { item } = defineProps(['item']) as ParsedContent
                 {{ item.title }}
             </h3>
             <p>
-                {{ item.description }}
+                {{ item.subtitle }}
             </p>
             <v-chip v-for="skill in item.skills" :key="skill" size="small" class="mr-2">
                 {{ skill }}

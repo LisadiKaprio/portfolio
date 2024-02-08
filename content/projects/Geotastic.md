@@ -1,6 +1,6 @@
 ---
 title: Internship at Geotastic
-description: Various web development work
+subtitle: Various web development work
 created: 2022-09-30
 cover: chat-village-cover.jpg
 ---

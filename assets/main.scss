@@ -1,18 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
+
 $background: #f7f7f7;
 $primary: #dc740b;
 $color-secondary: #e6d4a4;
 $dark: #1e1104;
 
-// h1, h2 {
-//   font-family: 'Bebas Neue', Impact, sans-serif;
-//   font-weight: 500;
-// }
+html {
+  font-family: 'Roboto Mono', monospace;
+  -webkit-text-fill-color: $dark;
+}
 
-// h3 {
-//   font-family: "Roboto Condensed";
-//   font-size: 18px;
-//   text-transform: uppercase;
-// }
+h1, h2 {
+  font-weight: 500;
+}
+
+p {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.v-btn {
+  height: auto !important;
+}
+
+.v-divider {
+  color: $dark;
+  border-right-width: 2px;
+}
+
+.v-card {
+  border-radius: 0px;
+}
+
+.v-btn {
+  border-radius: 0px !important;
+  text-transform: none !important;
+  padding: 8px !important;
+}
 
 .page-enter-active,
 .page-leave-active {
@@ -22,4 +51,16 @@ $dark: #1e1104;
 .page-leave-to {
   opacity: 0;
   transform: scale(0.8);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(0,0,0,0.1);
+  height: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.3);
+  border-radius: 8px;
+  padding: 5px;
 }

@@ -7,12 +7,12 @@ import { createVuetify } from 'vuetify'
 const lisaTheme = {
   dark: false,
   colors: {
-    background: '#dc740b',
-    primary: '#dc740b',
+    background: '#FCFAF9',
+    primary: '#F4CA98',
   },
   variables: {
     'border-color': '#000000',
-    // 'border-opacity': 0.12,
+    'border-opacity': 0.25,
     // 'high-emphasis-opacity': 0.87,
     // 'medium-emphasis-opacity': 0.60,
     // 'disabled-opacity': 0.38,
@@ -36,6 +36,11 @@ export default defineNuxtPlugin((app) => {
       defaultTheme: 'lisaTheme',
       themes: {
         lisaTheme,
+      },
+      variations: {
+        colors: ['primary', 'secondary'],
+        lighten: 1,
+        darken: 2,
       },
     },
   })

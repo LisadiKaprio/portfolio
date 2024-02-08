@@ -1,23 +1,28 @@
 ---
 title: Chat Village
-description: Twitch Stream Widgets with 2D Characters
+subtitle: Twitch Stream Widgets with 2D Characters
+description: Chat Village is a series of widgets that give the chatters the ability to live in the Twitch stream as small animal avatars. They allow for many interactions, such as hugging, dancing, stealing, as well as earning in-game currency through fishing and boat-racing, to then spend it on avatar clothing.
 created: 2023-09-30
 cover: chat-village-cover.jpg
+coverAlt: Showcase of the widgets
+goal: DE:HIVE Bachelor Thesis
 skills:
-  - 2D Art
   - Web Development
+  - 2D Art
+  - 2D Animation
 tools:
   - Typescript
   - Vue.js
   - Paint Tool SAI
+duration: 6 months, being updated to this day
 ---
 
-Chat Village is a series of widgets that allow chatters to live in the Twitch stream as small animal avatars. The game world itself is an imaginary village on the beach, and the interaction options are adapted to this setting (for example fishing and boat racing). Seastars serve as currency in this world to purchase clothing and initiate actions. You get seastars by fishing, winning events and by simply writing messages in chat.
+### Twitch chat integration
 
----
+I established the communication between the widgets and the chatters with the help of a chat bot. Through constant testing I created a list of useful commands to give chatters insights into their in-game status.
 
-You can log in and use Chat Village at chatvillage.de
+[title](https://www.example.com)
 
----
+### Constant playtesting
 
-This was the bachelor thesis project I have done during my Game Design studies at the HTW Berlin, DE:HIVE. I had to do all the full stack web development that was required for the project, as well as draw the assets. I also did a lot of playtesting on my own Twitch streams, and constantly came up with new features and quality of life improvements, as well as discovered bugs while streaming and letting my viewers interact with the game world.
+With the help of my personal Twitch stream, I could do constant bug-hunting, as well as observe user behavior and make improvements accordingly. It was also important to filter helpful feedback and only implement features that would be great improvement, as well as  

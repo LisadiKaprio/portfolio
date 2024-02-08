@@ -6,17 +6,18 @@
         <div class="sidebar-container">
             <div class="sidebar">
                 <NuxtLink :to="`/`">
-                    <v-btn color="primary">
-                        Lisa DJKapurio
+                    <v-btn color="primary" elevation="0">
+                        <h1>Lisa DJKapurio</h1>
                     </v-btn>
                 </NuxtLink>
                 <NuxtLink to="/projects">
-                    <v-btn>
+                    <v-btn color="primary" elevation="0">
                         My Projects
                     </v-btn>
                 </NuxtLink>
             </div>
         </div>
+        <v-divider vertical />
         <div class="main-content">
             <slot />
         </div>
@@ -36,13 +37,11 @@
     .sidebar-container {
         min-height: 100vh;
         display: flex;
-        padding: 24px 24px;
 
         .sidebar {
-            background-color: $color-secondary;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: end;
             justify-content: center;
             width: 100%;
             max-width: 720px;
@@ -58,11 +57,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
         flex: 2;
-        max-width: 1200px;
+        max-width: 800px;
         max-height: 100vh;
         overflow: auto;
+        padding: 0px 36px;
     }
 }
 </style>
