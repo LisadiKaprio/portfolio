@@ -42,7 +42,6 @@
             display: flex;
             flex-direction: column;
             align-items: end;
-            justify-content: center;
             width: 100%;
             max-width: 720px;
             padding: 24px 24px;
@@ -61,7 +60,7 @@
         max-width: 800px;
         max-height: 100vh;
         overflow: auto;
-        padding: 0px 36px;
+        padding: 24px 36px;
     }
 }
 </style>

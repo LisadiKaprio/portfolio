@@ -12,12 +12,12 @@ const { data } = await useAsyncData(`content-${path}`, () => {
     <img :src="`/${data.cover}`" :alt="data.coverAlt" class="cover">
     <div class="main">
       <div class="intro">
-        <v-card :elevation="2">
-          <div v-if="data.skills" class="d-flex flex-column">
-            <p>Skills:</p>
-            <v-chip v-for="skill in data.skills" :key="skill" class="mr-2">
+        <v-card class="project-card" :elevation="2">
+          <div v-if="data.skills" class="card-section">
+            <h3>Skills:</h3>
+            <p v-for="skill in data.skills" :key="skill" class="mr-2">
               {{ skill }}
-            </v-chip>
+            </p>
           </div>
         </v-card>
         <div class="intro-textbar">
@@ -51,8 +51,19 @@ const { data } = await useAsyncData(`content-${path}`, () => {
     display: flex;
     flex-direction: row;
 
-    .v-card {
+    .project-card {
       flex: 1;
+      padding: 12px;
+
+      .card-section {
+        &>*:not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+
+      &>*:not(:last-child) {
+        margin-bottom: 8px;
+      }
     }
 
     .intro-textbar {

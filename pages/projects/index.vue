@@ -14,12 +14,14 @@ if (items.value) {
 </script>
 
 <template>
-  <div class="d-flex flex-column align-center">
-    <h1>Projects</h1>
+  <div class="d-flex flex-column">
+    <h1 class="mb-8">
+      Projects
+    </h1>
     <template v-if="sortedItems">
       <v-data-iterator :items="sortedItems">
         <v-row no-gutters class="d-flex justify-center ">
-          <v-col v-for="(item, i) in items" :key="i" class="ma-4">
+          <v-col v-for="(item, i) in items" :key="i" class="mb-8 mr-8">
             <ProjectCard :item="item" />
           </v-col>
         </v-row>
