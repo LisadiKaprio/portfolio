@@ -55,5 +55,19 @@
 	},
 	"extends": [
 		"@nuxtjs/eslint-config-typescript"
+	],
+	"overrides": [
+		{
+			"files": [
+				"*.vue"
+			],
+			"rules": {
+				"indent": "off",
+				"curly": [
+					"error",
+					"multi"
+				],
+			}
+		}
 	]
 }

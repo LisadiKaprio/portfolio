@@ -11,7 +11,8 @@ html {
   -webkit-text-fill-color: $dark;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-weight: 500;
 }
 
@@ -53,6 +54,7 @@ a {
 .page-leave-active {
   transition: all 0.3s;
 }
+
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
@@ -61,12 +63,47 @@ a {
 
 ::-webkit-scrollbar {
   width: 8px;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.1);
   height: 11px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   padding: 5px;
+}
+
+
+.lightbox-image-small {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.lightbox-overlay {
+  z-index: 99;
+  // grid-area: image;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.5s ease;
+
+  .lightbox-image-big {
+    display: block;
+    // object-fit: contain;
+  }
+
+  .lightbox-nav {
+    --v-icon-size-multiplier: 5 !important;
+    width: 120px !important;
+    -webkit-text-fill-color: $background;
+  }
+
+  .inactiveIconButton {
+    -webkit-text-fill-color: transparent;
+    cursor: default;
+  }
 }
