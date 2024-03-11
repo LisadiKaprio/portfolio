@@ -61,6 +61,64 @@ a {
   transform: scale(0.8);
 }
 
+.page-with-sidebar {
+  background: $background;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .sidebar-container {
+    min-height: 100vh;
+    display: flex;
+
+    .sidebar-center {
+      transform: translateY(35vh);
+    }
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      max-width: 720px;
+      padding: 24px 24px;
+      transition: all 0.5s ease;
+
+      .portfolio-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      .v-btn {
+        margin-bottom: 16px;
+      }
+
+      .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .v-btn {
+          border-radius: 99px !important;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 800px;
+    max-height: 100vh;
+    overflow: auto;
+    padding: 24px 36px;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   background: rgba(0, 0, 0, 0.1);
