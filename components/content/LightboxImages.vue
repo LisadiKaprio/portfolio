@@ -4,8 +4,7 @@
 >
 
   const props = defineProps<{
-    items: string[],
-    lightboxVisible: boolean
+    items: string[]
   }>()
 
   const currentImageIndex = ref(-1)
@@ -28,28 +27,18 @@
 
 <template>
   <div class="gallery">
-    <v-dialog transition="false">
+    <v-dialog transition="false" scroll-strategy="none">
       <template #activator="{ props: activatorProps }">
         <v-container class="my-5">
-          <div>
-            <v-row>
-              <v-col
-                v-for="(item, idx) in props.items"
-                :key="idx"
-                class="d-flex child-flex"
-                cols="4"
-              >
                 <img
+                v-for="(item, idx) in items"
+                :key="idx"
                   :src="item"
                   contain
                   class="lightbox-image-small"
                   v-bind="activatorProps"
                   @click="currentImageIndex = idx"
                 >
-                </img>
-              </v-col>
-            </v-row>
-          </div>
         </v-container>
       </template>
       <template #default="{ isActive }">

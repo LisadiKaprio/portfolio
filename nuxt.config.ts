@@ -23,6 +23,10 @@ export default defineNuxtConfig({
   content: {
     // ... options
   },
+  components: {
+    global: true,
+    dirs: ['~/components'],
+  },
   vite: {
     vue: {
       template: {

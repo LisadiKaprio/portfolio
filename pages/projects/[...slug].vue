@@ -19,6 +19,7 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
 
 <template>
   <div v-if="data" class="project-page">
+    <!-- <lightbox-images :items="projectImages" /> -->
     <div class="cover">
       <img :src="`/${data.cover}`" :alt="data.coverAlt">
       <div class="cover-title">

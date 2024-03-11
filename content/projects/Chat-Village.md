@@ -30,6 +30,9 @@ Chat Village is a series of widgets that give the chatters the ability to live i
 
 I established the communication between the widgets and the chatters with the help of a chat bot. Through constant testing I created a list of useful commands to give chatters insights into their in-game status.
 
+::lightbox-images{:items='["https://upload.wikimedia.org/wikipedia/commons/7/79/Korowai_gecko_%28cropped%29.jpg"]'}
+::
+
 # [title](https://www.example.com)
 
 ### Constant playtesting

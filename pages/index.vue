@@ -2,14 +2,10 @@
   lang="ts"
   setup
 >
-  const projectImages = [
-    'https://upload.wikimedia.org/wikipedia/commons/7/79/Korowai_gecko_%28cropped%29.jpg', 'https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg',
-  ]
 </script>
 
 <template>
   <div>
-    <lightbox-images :items="projectImages" />
     <v-container class="d-flex align-center justify-center">
       <v-sheet
         :elevation="4"

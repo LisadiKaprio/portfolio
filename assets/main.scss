@@ -133,9 +133,15 @@ a {
 
 
 .lightbox-image-small {
-  width: 100px;
-  height: 100px;
+  width: 100%;
   object-fit: contain;
+  cursor: zoom-in;
+
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .lightbox-overlay {
