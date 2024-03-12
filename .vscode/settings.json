@@ -2,7 +2,7 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "[vue]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+        "editor.defaultFormatter": "Vue.volar"
     },
     "[scss]": {
         "editor.defaultFormatter": "vscode.css-language-features"

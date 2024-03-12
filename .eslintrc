@@ -6,7 +6,8 @@
 		"node": true
 	},
 	"plugins": [
-		"@typescript-eslint"
+		"@nuxt/eslint-config",
+		"plugin:prettier/recommended"
 	],
 	"parserOptions": {
 		"ecmaVersion": "latest",
