@@ -3,8 +3,39 @@ title: What are the lives behind these windows
 subtitle: 2D Interactive Story
 created: 2023-03-01
 cover: chat-village-cover.jpg
+
+skills:
+  - Web Development
+  - 2D Art
+tools:
+  - Javascript
+  - p5.js
+  - HTML
+
+website: chatvillage.de
+websiteLabel: Visit the website
+github: p5houses
+itchio: https://ukraine-not-a-game.itch.io/what-are-the-lives-behind-these-windows
 ---
 
-In this game, you'll scroll through a tiny portion of a city filled with houses, and as you do, you'll notice that some of the windows in the buildings are lit up. These are your entry points into the lives of the people living in the city.
-The game was created during the semester where I was busy with my internship. It's a project that was made over the span of multiple months and built bit by bit, with quite a bit of ideas and assets not used, and many workflow elements optimized to get the game done by a certain deadline: for example working with low resolution images, omitting details in artworks, keeping the artwork sketch-like and rough. The last point also applies to my attempt at making the grim message of the game show through.
-The main goal was to communicate the end and the tragedies of people's lives, striking in the middle of a casual everyday life.
+### What is it about?
+
+In this game, player can scroll through a tiny portion of a city filled with houses, with some of the windows in the buildings being lit up. Clicking on those reveals a snapshot of the family's life there.
+
+
+::lightbox-images{:itemsAsVideos='["/what-are-the-lives-2"]'}
+::
+
+### What was the goal?
+
+I joined a group of students at my uni, that each worked either in teams or on their own to create games and interactive experiences to make others aware of the ongoing war in Ukraine and to educate others on certain aspects of it. I had an urge to communicate the tragedy that comes with one's everyday life being suddenly interrupted by an enormous tragedy, without them ever expecting it.
+
+
+::lightbox-images{:itemsAsVideos='["/what-are-the-lives-3", "/what-are-the-lives-4"]'}
+::
+
+### What did I learn?
+
+It was also my first experience creating a game using Javascript, and I really wanted to try it to make the game playable right away in browser, without the need to download a build. I had played around with p5.js before, so I decided to use this library here, since it allowed for easier implementation of various visuals and image rendering.
+
+This project taught me that developing games to be played in browser is very rewarding, and definitely a better decision than developing them in some dedicated game engine, especially when it's a simple project such as this one.

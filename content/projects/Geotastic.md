@@ -1,14 +1,13 @@
 ---
 title: Internship at Geotastic
-subtitle: Various web development work
+subtitle: Browser-Based Game Development
 created: 2022-09-30
 cover: chat-village-cover.jpg
 
-goal: Personal project done with a friend
+goal: Internship focused on developing a browser-based game.
 skills:
   - Web Development
   - 2D Art
-  - 2D Animation
 tools:
   - Vue.js
   - Typescript

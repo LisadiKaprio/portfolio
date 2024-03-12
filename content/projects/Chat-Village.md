@@ -33,8 +33,6 @@ I established the communication between the widgets and the chatters with the he
 ::lightbox-images{:items='["https://upload.wikimedia.org/wikipedia/commons/7/79/Korowai_gecko_%28cropped%29.jpg"]'}
 ::
 
-# [title](https://www.example.com)
-
 ### Constant playtesting
 
 With the help of my personal Twitch stream, I could do constant bug-hunting, as well as observe user behavior and make improvements accordingly. It was also important to filter helpful feedback and only implement features that would be great improvement, as well as  
