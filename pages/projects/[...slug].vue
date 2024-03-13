@@ -19,13 +19,20 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
 
 <template>
   <div v-if="data" class="project-page">
-    <!-- <lightbox-images :items="projectImages" /> -->
     <div class="cover">
-      <img :src="`/${data.cover}`" :alt="data.coverAlt">
+      <div class="cover-video">
+        <VideoComponent :mp4-file-name="data.coverMp4" :webm-file-name="data.coverWebm"
+          :image-file-name="data.coverImage" :cover-alt="data.coverAlt" />
+      </div>
+      <!-- <img :src="`/${data.cover}`" :alt="data.coverAlt"> -->
       <div class="cover-title">
         <h1>{{ data.title }}</h1>
       </div>
     </div>
+    <lightbox-images :items="null" :itemsAsVideos="[
+    { mp4FileName: 'what-are-the-lives-2.mp4' },
+    { mp4FileName: 'what-are-the-lives-3.mp4' }]" />
+    <lightbox-images :items="[`/${data.coverImage}`]" :itemsAsVideos="null" />
     <div class="main">
       <div class="intro">
         <div class="project-card" :elevation="2">
@@ -75,95 +82,4 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
 
 <style lang="scss">
 @import "../assets/main";
-
-.project-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .main {
-    padding: 4px 36px;
-
-    &>*:not(:last-child) {
-      margin-bottom: 24px;
-    }
-  }
-
-  .intro {
-    display: flex;
-    flex-direction: row;
-
-    .project-card {
-      flex: 1.35;
-
-      .card-section {
-        &>*:not(:last-child) {
-          margin-bottom: 4px;
-        }
-      }
-
-      &>*:not(:last-child) {
-        margin-bottom: 8px;
-      }
-    }
-
-    .intro-buttons-bar {
-      flex: 1;
-
-      &>*:not(:last-child) {
-        margin-bottom: 8px;
-      }
-    }
-  }
-
-  h2,
-  h3 {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 24px;
-    margin-bottom: 12px;
-
-    a {
-      color: $dark;
-      cursor: default;
-    }
-  }
-
-  .cover {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 300px;
-    margin-bottom: 28px;
-
-    img {
-      object-fit: cover;
-
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 105%;
-      height: 105%;
-      filter: blur(4px) brightness(0.5);
-      transition: transform 0.3s ease-in-out;
-
-      &:hover {
-        transform: translate(-50%, -50%) scale(1.05);
-      }
-    }
-
-    .cover-title {
-      -webkit-text-fill-color: $background;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 100%);
-      padding: 8px 12px;
-      backdrop-filter: blur(10px);
-    }
-  }
-}
 </style>

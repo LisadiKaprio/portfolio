@@ -2,7 +2,9 @@
 title: What are the lives behind these windows
 subtitle: 2D Interactive Story
 created: 2023-03-01
-cover: chat-village-cover.jpg
+coverMp4: what-are-the-lives-1.mp4
+coverImage: chat-village-cover.jpg
+coverAlt: Showcase of the widgets
 
 skills:
   - Web Development
