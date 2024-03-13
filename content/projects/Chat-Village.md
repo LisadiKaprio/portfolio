@@ -4,7 +4,7 @@ subtitle: Twitch Stream Widgets with 2D Characters
 
 created: 2023-09-30
 
-coverMp4: what-are-the-lives-1.mp4
+coverMp4: chat-village-cover.mp4
 coverImage: chat-village-cover.jpg
 coverAlt: Showcase of the widgets
 goal: DE:HIVE Bachelor Thesis

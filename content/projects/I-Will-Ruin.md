@@ -2,7 +2,9 @@
 title: I will ruin my sister's whole career
 subtitle: Browser Game
 created: 2023-12-31
-cover: chat-village-cover.jpg
+coverMp4: i-will-ruin-cover.mp4
+coverImage: chat-village-cover.jpg
+coverAlt: Various previews of how the website functions
 
 skills:
   - Web Development
