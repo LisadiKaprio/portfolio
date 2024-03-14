@@ -29,10 +29,7 @@ I initially got to know about this project through Twitch streams, in which the 
 
 I have spent most of the internship improving user interface and fixing bugs. This was a smooth way to get used to working on a large established project and to learn to work confidently with Vue.js and Typescript.
 
-::lightbox-images{:items='["/geotastic-login.png"]'}
-::
-
-::lightbox-images{:itemsAsVideos='["geotastic-login"]'}
+::lightbox-images{:items='["/geotastic-login.png", "geotastic-login"]'}
 ::
 
 My favourite part was finding cluttered UI and making it more clear and more spacious. In the redesigned login/register window I focused on making it more familiar and closer to how such modals are usually designed and modeled, because I noticed myself as a user of this website getting confused whenever I opened this window.
@@ -40,16 +37,16 @@ My favourite part was finding cluttered UI and making it more clear and more spa
 ::lightbox-images{:items='["/geotastic-multiplayer.png"]'}
 ::
 
-The multiplayer lobby settings display was also always confusing to me. In many Twitch streams I also noticed streamers and other players forgetting what setting were set up by the host, or not realizing that the host has changed a certain setting. This happened because of the text clutter, that was easy to gloss over, especially for casual players like myself. Because of this major flaw, redesigning this component was my top priority.
+The multiplayer lobby settings display was also always confusing to me. And I wasn't the only one, as players often kept forgetting what settings were set up by the host, or didn't realize that the host has changed a certain setting. This happened because of the text clutter that was easy to gloss over, especially for casual players like myself. Because of this major flaw, redesigning this component was my top priority. Every setting got its dedicated descriptive icon on the panel, which can be hovered over to reveal details in a tooltip.
 
-::lightbox-images{:itemsAsVideos='["geotastic-multiplayer"]'}
+::lightbox-images{:items='["geotastic-multiplayer"]'}
 ::
 
-::lightbox-images{:itemsAsVideos='["geotastic-states"]'}
+::lightbox-images{:items='["geotastic-states"]'}
 ::
 
 
-::lightbox-images{:itemsAsVideos='["geotastic-multiplayer"]'}
+::lightbox-images{:items='["geotastic-multiplayer"]'}
 ::
 
 ### Minor improvements of cluttered UI
