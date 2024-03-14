@@ -4,7 +4,9 @@ const props = defineProps<{
   fileName: string
 }>()
 
-const currentFileName = ref(props.fileName)
+const currentFileName = computed(() => {
+  return props.fileName
+})
 
 </script>
 
