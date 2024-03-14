@@ -21,18 +21,13 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
   <div v-if="data" class="project-page">
     <div class="cover">
       <div class="cover-video">
-        <VideoComponent :mp4-file-name="data.coverMp4" :webm-file-name="data.coverWebm"
-          :image-file-name="data.coverImage" :cover-alt="data.coverAlt" />
+        <VideoComponent :fileName="data.cover" />
       </div>
       <!-- <img :src="`/${data.cover}`" :alt="data.coverAlt"> -->
       <div class="cover-title">
         <h1>{{ data.title }}</h1>
       </div>
     </div>
-    <lightbox-images :items="null" :itemsAsVideos="[
-    { mp4FileName: 'what-are-the-lives-2.mp4' },
-    { mp4FileName: 'what-are-the-lives-3.mp4' }]" />
-    <lightbox-images :items="[`/${data.coverImage}`]" :itemsAsVideos="null" />
     <div class="main">
       <div class="intro">
         <div class="project-card" :elevation="2">

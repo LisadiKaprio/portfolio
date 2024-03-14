@@ -2,9 +2,7 @@
 title: Internship at Geotastic
 subtitle: Browser-Based Game Development
 created: 2022-09-30
-coverMp4: geotastic-cover.mp4
-coverImage: chat-village-cover.jpg
-coverAlt: Various previews of how the website functions
+cover: geotastic-cover
 
 goal: Internship focused on developing a browser-based game.
 skills:

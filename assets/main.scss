@@ -237,22 +237,22 @@ video {
 }
 
 .lightbox-container-small {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 16px 0px;
+  padding: 24px 0px !important;
+  // margin: 16px 0px;
 }
 
 .lightbox-image-small-wrapper {
-  flex: 1;
+  padding: 0px 6px !important;
 }
 
 .lightbox-image-small {
   // flex: 1;
-  min-height: 224px;
-  max-width: 100%;
-  object-fit: contain;
+  height: 280px;
+  // object-fit: contain;
   cursor: zoom-in;
+  width: 100%;
 
   transition: all 0.5s ease;
 

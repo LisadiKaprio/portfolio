@@ -1,15 +1,8 @@
 <script lang="ts" setup>
 
-type VideoItem = {
-  mp4FileName: string;
-  webmFileName?: string;
-  imageFileName?: string;
-  imageAlt?: string;
-}
-
 const props = defineProps<{
-  items: string[] | null
-  itemsAsVideos: VideoItem[] | null
+  items?: string[]
+  itemsAsVideos?: string[]
 }>()
 
 const currentItemIndex = ref(-1)
@@ -43,11 +36,10 @@ const transparentRightIcon = computed(() => {
           v-bind="activatorProps" @click="currentItemIndex = idx">
       </v-container>
       <v-container v-else class="lightbox-container-small">
-        <div v-for="(item, idx) in itemsAsVideos" :key="idx" class="lightbox-image-small-wrapper">
-          <video-component :mp4-file-name="item.mp4FileName" :webm-file-name="item.webmFileName"
-            :image-file-name="item.imageFileName" :cover-alt="item.imageAlt" class="lightbox-image-small"
-            @click="currentItemIndex = idx" v-bind="activatorProps" />
-        </div>
+        <v-col v-for="(item, idx) in itemsAsVideos" :key="idx" class="lightbox-image-small-wrapper">
+          <video-component :fileName="item" class="lightbox-image-small" @click="currentItemIndex = idx"
+            v-bind="activatorProps" />
+        </v-col>
       </v-container>
     </template>
     <template #default="{ isActive }">
@@ -55,9 +47,7 @@ const transparentRightIcon = computed(() => {
         <v-icon class="lightbox-nav" :class="transparentLeftIcon ? 'inactiveIconButton' : ''" icon="mdi-chevron-left"
           @click.stop="!transparentLeftIcon ? currentItemIndex -= 1 : isActive.value = false" />
         <v-img v-if="currentImage" :src="currentImage" class="lightbox-image-big" height="90vh" />
-        <video-component v-else-if="currentVideo" :mp4-file-name="currentVideo.mp4FileName"
-          :webm-file-name="currentVideo.webmFileName" :image-file-name="currentVideo.imageFileName"
-          :cover-alt="currentVideo.imageAlt" class="lightbox-image-big" />
+        <video-component v-else-if="currentVideo" :fileName="currentVideo" class="lightbox-image-big" />
         <v-icon class="lightbox-nav" :class="transparentRightIcon ? 'inactiveIconButton' : ''" icon="mdi-chevron-right"
           @click.stop="!transparentRightIcon ? currentItemIndex += 1 : isActive.value = false" />
       </div>
