@@ -14,7 +14,7 @@ tools:
   - Paint Tool SAI
   - Audacity
 
-itchio: fourearedfox
+itchio: https://lisadikaprio.itch.io/fourearedfox
 ---
 
 ### What is it about?

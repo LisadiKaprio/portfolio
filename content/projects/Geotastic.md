@@ -18,13 +18,39 @@ duration: 6 months
 website: geotastic.net
 ---
 
-various opportunities to improve UI and UX
 
-### Improved match settings overview
+### What is it about?
 
-did that based on a thing that annoyed me. also had other similar UI stuff improvements that I contributed to
+Geotastic is a Google Street View based browser game, known as a free alternative to another established browser game called Geoguessr. The basic concept is to guess where on the map you are based on a random Street View footage the player is given.Various game modes, single- and multiplayer, highscore records and community events are added on top of that, making it a sophisticated game project with large fanbase.
 
-### Improved login window
+I initially got to know about this project through Twitch streams, in which the developer AnnoyingEdu himself was present either as a chatter, a guest or the streamer himself. I enjoyed getting to see the development process up close, and constantly contributed by providing bug reports and even creating artworks that got featured on the website as game assets.Naturally, when it was time to get my mandatory internship, spending this time contributing to Geotastic's code and design was my first choice.
+
+### What tasks did I get to accomplish?
+
+I have spent most of the internship improving user interface and fixing bugs. This was a smooth way to get used to working on a large established project and to learn to work confidently with Vue.js and Typescript.
+
+::lightbox-images{:items='["/geotastic-login.png"]'}
+::
+
+::lightbox-images{:itemsAsVideos='["geotastic-login"]'}
+::
+
+My favourite part was finding cluttered UI and making it more clear and more spacious. In the redesigned login/register window I focused on making it more familiar and closer to how such modals are usually designed and modeled, because I noticed myself as a user of this website getting confused whenever I opened this window.
+
+::lightbox-images{:items='["/geotastic-multiplayer.png"]'}
+::
+
+The multiplayer lobby settings display was also always confusing to me. In many Twitch streams I also noticed streamers and other players forgetting what setting were set up by the host, or not realizing that the host has changed a certain setting. This happened because of the text clutter, that was easy to gloss over, especially for casual players like myself. Because of this major flaw, redesigning this component was my top priority.
+
+::lightbox-images{:itemsAsVideos='["geotastic-multiplayer"]'}
+::
+
+::lightbox-images{:itemsAsVideos='["geotastic-states"]'}
+::
+
+
+::lightbox-images{:itemsAsVideos='["geotastic-multiplayer"]'}
+::
 
 ### Minor improvements of cluttered UI
 

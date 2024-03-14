@@ -249,10 +249,11 @@ video {
 
 .lightbox-image-small {
   // flex: 1;
-  height: 280px;
+  max-height: 280px;
   // object-fit: contain;
   cursor: zoom-in;
   width: 100%;
+  object-fit: cover;
 
   transition: all 0.5s ease;
 

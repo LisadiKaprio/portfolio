@@ -12,10 +12,10 @@ tools:
   - p5.js
   - HTML
 
-website: chatvillage.de
-websiteLabel: Visit the website
-github: p5houses
+website: https://ukrainenotagame.com/home
+websiteLabel: Project's website
 itchio: https://ukraine-not-a-game.itch.io/what-are-the-lives-behind-these-windows
+github: p5houses
 ---
 
 ### What is it about?

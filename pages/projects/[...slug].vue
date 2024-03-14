@@ -60,10 +60,15 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
           </div>
         </div>
         <div class="intro-buttons-bar">
-          <v-btn v-if="website" prepend-icon="mdi-open-in-new" color="primary" target="_blank" :href="website">
+          <v-btn v-if="data.itchio" block color="primary" elevation="1" target="_blank" :href="data.itchio">
+            <img width="18" class="mr-2" :src="`/icons/itchdotio.svg`">
+            Play in browser
+          </v-btn>
+          <v-btn v-if="website" block prepend-icon="mdi-open-in-new" elevation="1" color="primary" target="_blank"
+            :href="website">
             {{ websiteButtonLabel }}
           </v-btn>
-          <v-btn v-if="github" color="primary" target="_blank" :href="github">
+          <v-btn v-if="github" block color="primary" variant="tonal" target="_blank" :href="github">
             <img width="18" class="mr-2" :src="`/icons/github.svg`">
             View source code
           </v-btn>
