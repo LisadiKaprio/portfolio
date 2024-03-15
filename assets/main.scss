@@ -2,9 +2,10 @@
 
 $background: #f7f7f7;
 $primary: #dc740b;
-$color-secondary: #e6d4a4;
+$secondary: rgb(244, 202, 152);
 $dark: #1e1104;
-$dark-semitransparent: rgba(30, 17, 4, 0.5);
+$dark-transparent-95: rgba(30, 17, 4, 0.95);
+$dark-transparent-5: rgba(30, 17, 4, 0.5);
 
 html {
   font-family: 'Roboto Mono', monospace;
@@ -92,8 +93,10 @@ a {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      width: 100%;
-      max-width: 720px;
+      // width: 100%;
+      // max-width: 360px;
+      flex-basis: 0;
+      flex-grow: 1;
       padding: 24px 24px;
       transition: all 0.5s ease;
 
@@ -112,8 +115,14 @@ a {
         flex-direction: column;
         align-items: flex-end;
 
-        .v-btn {
+
+
+        .socials-button-round {
           border-radius: 99px !important;
+          height: 42px;
+          width: 42px;
+          color: $dark-transparent-5;
+          -webkit-text-fill-color: $dark-transparent-5 !important;
         }
       }
     }
@@ -123,14 +132,22 @@ a {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    flex: 1;
-    max-width: 1000px;
+    width: 1000px;
     max-height: 100vh;
     overflow: auto;
     padding: 24px 36px;
   }
 }
 
+.intro-card-header-section {
+  padding: 16px 24px;
+  // background-color: $secondary;
+}
+
+.intro-card-paragraph-section {
+  padding: 16px 24px;
+  -webkit-text-fill-color: $dark-transparent-95;
+}
 
 .project-page {
   max-width: 100%;

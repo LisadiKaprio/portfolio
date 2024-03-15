@@ -1,39 +1,36 @@
-<script
-  lang="ts"
-  setup
->
+<script lang="ts" setup>
 
 </script>
 
 <template>
-  <div>
-    <v-container class="d-flex align-center justify-center">
-      <v-sheet
-        :elevation="4"
-        :height="200"
-        :width="500"
-        rounded
-      >
-        <h1>Hi!</h1>
-        <p>
-          I’m a Game Design graduate. I enjoy creating 2D artworks and game assets, as well as developing web
-          applications.
+  <v-container class="d-flex align-center">
+    <v-sheet :elevation="4" :width="560" rounded>
+      <div class="intro-card-header-section">
+        <h1>Ariana Zeivald</h1>
+        <p>You can call me Ari or Lisa.</p>
+      </div>
+      <v-divider></v-divider>
+      <div>
+        <p class="intro-card-paragraph-section">
+          💻🎨 I'm a Game Design graduate in Berlin, developing web applications and creating 2D artworks.
+          <br /> 🔧 I have a strong passion for finding and fixing bugs.
+          <br /><br /> 💜 My biggest hobby is participating in Twitch streams, which is reflected in most of my
+          projects.
         </p>
-      </v-sheet>
-    </v-container>
-  </div>
+      </div>
+    </v-sheet>
+  </v-container>
 </template>
 
 <style lang="scss">
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
 
-  .page-enter-active,
-  .page-leave-active {
-    transition: all 0.4s;
-  }
-
-  .page-enter-from,
-  .page-leave-to {
-    opacity: 0;
-    filter: blur(1rem);
-  }
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
 </style>

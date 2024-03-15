@@ -20,7 +20,7 @@ watch(() => route.path, () => {
         <div class="portfolio-navigation">
             <NuxtLink :to="`/`">
                 <v-btn color="primary" elevation="0">
-                    <h1>Lisa DJKapurio</h1>
+                    <h1>Ariana Zeivald</h1>
                 </v-btn>
             </NuxtLink>
             <NuxtLink to="/projects">
@@ -30,11 +30,8 @@ watch(() => route.path, () => {
             </NuxtLink>
         </div>
         <div class="socials">
-            <v-btn
-                variant="outlined"
-                icon="fa:fas fa-brands fa-github"
-                @click="console.log(sidebarContentAtTop.valueOf())"
-            />
+            <v-btn variant="outlined" icon="fa:fas fa-brands fa-github" class="socials-button-round" height="42px"
+                @click="console.log(sidebarContentAtTop.valueOf())" />
         </div>
     </div>
 </template>
