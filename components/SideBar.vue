@@ -10,6 +10,29 @@ const sidebarPositionClass = computed(() => {
     return 'sidebar-center'
 })
 
+const socials = [
+    {
+        iconName: 'github',
+        tooltipLabel: 'Github',
+        url: 'https://github.com/LisadiKaprio/',
+    },
+    {
+        iconName: 'itch-io',
+        tooltipLabel: 'Itch.io',
+        url: 'https://lisadikaprio.itch.io/',
+    },
+    {
+        iconName: 'artstation',
+        tooltipLabel: 'Artstation',
+        url: 'https://www.artstation.com/lisadikaprio',
+    },
+    {
+        iconName: 'linkedin',
+        tooltipLabel: 'LinkedIn',
+        url: 'https://www.linkedin.com/in/ariana-zeivald/',
+    }
+]
+
 watch(() => route.path, () => {
     sidebarContentAtTop.value = (route.path !== '/')
 }, { immediate: true, deep: true })
@@ -30,8 +53,14 @@ watch(() => route.path, () => {
             </NuxtLink>
         </div>
         <div class="socials">
-            <v-btn variant="outlined" icon="fa:fas fa-brands fa-github" class="socials-button-round" height="42px"
-                @click="console.log(sidebarContentAtTop.valueOf())" />
+            <v-tooltip v-for="(item, idx) in socials" :key="idx" :text="item.tooltipLabel">
+                <template v-slot:activator="{ props }">
+                    <NuxtLink :to="`${item.url}`" target="_blank" v-bind="props">
+                        <v-btn variant="outlined" :icon="`fa:fas fa-brands fa-${item.iconName}`"
+                            class="socials-button-round" />
+                    </NuxtLink>
+                </template>
+            </v-tooltip>
         </div>
     </div>
 </template>

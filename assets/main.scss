@@ -74,6 +74,21 @@ a {
   padding: 5px;
 }
 
+.v-tooltip__content {
+  background-color: $background !important;
+  -webkit-text-fill-color: $dark-transparent-5 !important;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
 .page-with-sidebar {
   background: $background;
   display: flex;

@@ -18,6 +18,12 @@
           projects.
         </p>
       </div>
+
+      <NuxtLink to="/projects">
+        <v-btn color="primary" elevation="0">
+          My Projects
+        </v-btn>
+      </NuxtLink>
     </v-sheet>
   </v-container>
 </template>
