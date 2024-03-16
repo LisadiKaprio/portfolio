@@ -1,14 +1,7 @@
 <script lang="ts" setup>
 const route = useRoute()
 
-const sidebarContentAtTop = ref(route.path !== '/')
-
-const sidebarPositionClass = computed(() => {
-    if (sidebarContentAtTop.value)
-        return 'sidebar-top'
-
-    return 'sidebar-center'
-})
+const isHomepage = ref(route.path === '/')
 
 const socials = [
     {
@@ -33,34 +26,45 @@ const socials = [
     }
 ]
 
+const sidebarPositionClass = computed(() => {
+    if (isHomepage.value)
+        return 'sidebar-center'
+
+    return 'sidebar-top'
+})
+
 watch(() => route.path, () => {
-    sidebarContentAtTop.value = (route.path !== '/')
+    isHomepage.value = (route.path === '/')
 }, { immediate: true, deep: true })
 </script>
 
 <template>
     <div class="sidebar" :class="sidebarPositionClass">
-        <div class="portfolio-navigation">
-            <NuxtLink :to="`/`">
-                <v-btn color="primary" elevation="0">
-                    <h1>Ariana Zeivald</h1>
-                </v-btn>
-            </NuxtLink>
-            <NuxtLink to="/projects">
-                <v-btn color="primary" elevation="0">
-                    My Projects
-                </v-btn>
-            </NuxtLink>
-        </div>
-        <div class="socials">
-            <v-tooltip v-for="(item, idx) in socials" :key="idx" :text="item.tooltipLabel">
-                <template v-slot:activator="{ props }">
-                    <NuxtLink :to="`${item.url}`" target="_blank" v-bind="props">
-                        <v-btn variant="outlined" :icon="`fa:fas fa-brands fa-${item.iconName}`"
-                            class="socials-button-round" />
-                    </NuxtLink>
-                </template>
-            </v-tooltip>
-        </div>
+        <Transition>
+            <div v-if="isHomepage" class="socials">
+                <v-tooltip v-for="(item, idx) in socials" :key="idx" :text="item.tooltipLabel">
+                    <template v-slot:activator="{ props }">
+                        <NuxtLink :to="`${item.url}`" target="_blank" v-bind="props">
+                            <v-btn variant="outlined" :icon="`fa:fas fa-brands fa-${item.iconName}`"
+                                class="socials-button-round" />
+                        </NuxtLink>
+                    </template>
+                </v-tooltip>
+            </div>
+        </Transition>
+        <Transition>
+            <div v-if="!isHomepage" class="portfolio-navigation">
+                <NuxtLink :to="`/`">
+                    <v-btn color="primary" elevation="0">
+                        <h1>Ariana Zeivald</h1>
+                    </v-btn>
+                </NuxtLink>
+                <NuxtLink to="/projects">
+                    <v-btn color="primary" elevation="0">
+                        My Projects
+                    </v-btn>
+                </NuxtLink>
+            </div>
+        </Transition>
     </div>
 </template>

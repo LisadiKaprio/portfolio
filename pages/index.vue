@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <v-container class="d-flex align-center">
+  <v-container class="d-flex flex-column align-center">
     <v-sheet :elevation="4" :width="560" rounded>
       <div class="intro-card-header-section">
         <h1>Ariana Zeivald</h1>
@@ -18,13 +18,13 @@
           projects.
         </p>
       </div>
-
-      <NuxtLink to="/projects">
-        <v-btn color="primary" elevation="0">
-          My Projects
-        </v-btn>
-      </NuxtLink>
     </v-sheet>
+
+    <NuxtLink to="/projects">
+      <v-btn color="primary" elevation="0">
+        My Projects
+      </v-btn>
+    </NuxtLink>
   </v-container>
 </template>
 
