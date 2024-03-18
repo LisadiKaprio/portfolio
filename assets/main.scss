@@ -177,14 +177,6 @@ a {
   align-items: center;
   flex: 1;
 
-  .main {
-    padding: 4px 36px;
-
-    &>*:not(:last-child) {
-      margin-bottom: 24px;
-    }
-  }
-
   .intro {
     display: flex;
     flex-direction: row;
@@ -212,17 +204,30 @@ a {
     }
   }
 
+  .main {
+    padding: 4px 36px;
+
+    &>*:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+
   h2,
   h3 {
     font-size: 20px;
     font-weight: 400;
-    margin-top: 24px;
-    margin-bottom: 12px;
+    margin-top: 16px;
+    margin-bottom: 4px;
 
     a {
       color: $dark;
       cursor: default;
     }
+  }
+
+  p {
+    margin: 12px 0px;
   }
 
   .cover {

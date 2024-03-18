@@ -10,6 +10,7 @@ skills:
   - 2D Art
 tools:
   - Unity
+  - C#
   - Autodesk Maya
   - Adobe Photoshop
   - Adobe Substance 3D Painter
@@ -18,7 +19,6 @@ tools:
 website: https://lisadikaprio.itch.io/i-made-my-local-train-station-in-unity
 websiteLabel: Download for Windows
 ---
-
 
 ### What is it about?
 
