@@ -4,6 +4,7 @@ subtitle: Browser Game
 created: 2023-12-31
 cover: i-will-ruin-cover
 
+goal: Neuro-sama Birthday Game Jam of 2023
 skills:
   - Web Development
   - 2D Art

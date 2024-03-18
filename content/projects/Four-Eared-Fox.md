@@ -1,6 +1,6 @@
 ---
 title: What to do with a four-eared fox
-subtitle: Visual Novel made in a small team
+subtitle: Visual Novel
 created: 2021-08-01
 cover: four-eared-fox-cover
 

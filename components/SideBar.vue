@@ -26,6 +26,8 @@ const socials = [
     }
 ]
 
+const MAIL = `lisadikaprio@gmail.com`
+
 const sidebarPositionClass = computed(() => {
     if (isHomepage.value)
         return 'sidebar-center'
@@ -34,8 +36,6 @@ const sidebarPositionClass = computed(() => {
 })
 
 const hoverOverMail = ref(false);
-
-const MAIL = `lisadikaprio@gmail.com`
 
 const copyMailToClipboard = () => {
     navigator.clipboard.writeText(MAIL)
@@ -52,28 +52,26 @@ watch(() => route.path, () => {
     <div class="sidebar" :class="sidebarPositionClass">
         <Transition>
             <div v-if="isHomepage" class="socials">
-                <v-tooltip v-for="(item, idx) in socials" :key="idx" :text="item.tooltipLabel"
-                    content-class='custom-tooltip'>
-                    <template v-slot:activator="{ props }">
-                        <NuxtLink :to="`${item.url}`" target="_blank" v-bind="props">
-                            <v-btn variant="outlined" :icon="`fa:fas fa-brands fa-${item.iconName}`"
-                                class="socials-button-round" />
-                        </NuxtLink>
-                    </template>
-                </v-tooltip>
-                <v-tooltip text="Copy My Email" content-class='custom-tooltip'>
-                    <template v-slot:activator="{ props }">
-                        <div class="d-flex flex-row-reverse align-center justify-center">
-                            <v-btn variant="outlined" @mouseover="hoverOverMail = true"
-                                @mouseleave="hoverOverMail = false"
-                                :icon="hoverOverMail ? `fa:fas fa-solid fa-copy` : `fa:fas fa-solid fa-envelope`"
-                                class="socials-button-round mb-0" v-bind="props" @click="copyMailToClipboard()" />
-                            <Transition>
-                                <span v-if="hoverOverMail" class="mr-2 dark-transparent-5">{{ MAIL }}</span>
-                            </Transition>
-                        </div>
-                    </template>
-                </v-tooltip>
+                <NuxtLink v-for="(item, idx) in socials" :key="idx" :to="`${item.url}`" target="_blank">
+                    <v-btn icon variant="outlined" class="socials-button-round">
+                        <v-icon>
+                            {{ `fa:fas fa-brands fa-${item.iconName}` }}
+                        </v-icon>
+                        <v-tooltip activator="parent" content-class='custom-tooltip'>{{ item.tooltipLabel }}</v-tooltip>
+                    </v-btn>
+                </NuxtLink>
+                <div class="d-flex flex-row-reverse align-center justify-center">
+                    <v-btn icon variant="outlined" @mouseover="hoverOverMail = true" @mouseleave="hoverOverMail = false"
+                        class="socials-button-round mb-0" @click="copyMailToClipboard()">
+                        <v-icon>
+                            {{ hoverOverMail ? `fa:fas fa-solid fa-copy` : `fa:fas fa-solid fa-envelope` }}
+                        </v-icon>
+                        <v-tooltip activator="parent" content-class='custom-tooltip'>Copy My Email</v-tooltip>
+                    </v-btn>
+                    <Transition>
+                        <span v-if="hoverOverMail" class="mr-2 dark-transparent-5">{{ MAIL }}</span>
+                    </Transition>
+                </div>
             </div>
         </Transition>
         <Transition>

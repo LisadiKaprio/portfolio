@@ -1,6 +1,6 @@
 ---
 title: What are the lives behind these windows
-subtitle: 2D Interactive Story
+subtitle: Interactive Story
 created: 2023-03-01
 cover: what-are-the-lives-1
 
