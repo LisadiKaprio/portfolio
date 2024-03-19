@@ -26,11 +26,14 @@ github: chat-village
 
 Chat Village is a series of widgets that give the chatters the ability to live in the Twitch stream as small animal avatars. They allow for many interactions, such as hugging, dancing, stealing, as well as earning in-game currency through fishing and boat-racing, to then spend it on avatar clothing.
 
+::lightbox-images{:items='["chat-village-actions", "chat-village-animations"]'}
+::
+
 ### Twitch chat integration
 
 I established the communication between the widgets and the chatters with the help of a chat bot. Through constant testing I created a list of useful commands to give chatters insights into their in-game status.
 
-::lightbox-images{:items='["https://upload.wikimedia.org/wikipedia/commons/7/79/Korowai_gecko_%28cropped%29.jpg"]'}
+::lightbox-images{:items='["chat-village-setup", "chat-village-bonk-chat"]'}
 ::
 
 ### Constant playtesting
