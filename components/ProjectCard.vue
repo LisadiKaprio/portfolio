@@ -15,7 +15,7 @@ const { item } = defineProps(['item']) as ParsedContent
             <p>
                 {{ item.subtitle }}
             </p>
-            <v-chip v-for="tool in item.tools" :key="tool" size="small" class="mr-2">
+            <v-chip v-for="tool in item.tools" :key="tool" size="small" class="mr-2 mt-2">
                 {{ tool }}
             </v-chip>
         </v-card>

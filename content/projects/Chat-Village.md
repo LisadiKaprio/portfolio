@@ -19,6 +19,8 @@ duration: 6 months, being updated to this day
 
 website: chatvillage.de
 websiteLabel: Visit the website
+youtube: https://www.youtube.com/watch?v=pvJOJIVq0k4
+youtubeLabel: Watch the promo video
 github: chat-village
 ---
 
@@ -29,13 +31,13 @@ Chat Village is a series of widgets that give the chatters the ability to live i
 ::lightbox-images{:items='["chat-village-actions", "chat-village-animations"]'}
 ::
 
-### Twitch chat integration
+### What did I learn?
 
-I established the communication between the widgets and the chatters with the help of a chat bot. Through constant testing I created a list of useful commands to give chatters insights into their in-game status.
+Most of the learning experience for me here was about the importance of testing and directly communicating with the people that used this tool, both the twitch chatters and other streamers who have it set up in their channel. Features directly or indirectly requested by the chatters were very important in this project.
 
 ::lightbox-images{:items='["chat-village-setup", "chat-village-bonk-chat"]'}
 ::
 
-### Constant playtesting
+### What am I proud of?
 
-With the help of my personal Twitch stream, I could do constant bug-hunting, as well as observe user behavior and make improvements accordingly. It was also important to filter helpful feedback and only implement features that would be great improvement, as well as  
+This was my first experience writing a project with both frontend and backend from scratch, have them communicate successfully with each other as well as with Twitch, and have it run on a remote server 24/7 without any maintanence from my side. Even though it seemed to be an intimidating task at first, I am now feeling a bit more confident having accomplished that.

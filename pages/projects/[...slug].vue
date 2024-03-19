@@ -13,6 +13,8 @@ const website = (data.value && data.value.website)
   : null
 
 const websiteButtonLabel = (data.value && data.value.websiteLabel) ?? 'Go to the website'
+const youtubeButtonLabel = (data.value && data.value.youtubeLabel) ?? 'Watch the trailer video'
+const itchioButtonLabel = (data.value && data.value.itchioLabel) ?? 'Play in browser'
 
 const github = (data.value && data.value.github) ? `https://github.com/LisadiKaprio/${data.value.github}` : null
 </script>
@@ -62,7 +64,11 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
         <div class="intro-buttons-bar">
           <v-btn v-if="data.itchio" block color="primary" elevation="1" target="_blank" :href="data.itchio">
             <img width="18" class="mr-2" :src="`/icons/itchdotio.svg`">
-            Play in browser
+            {{ itchioButtonLabel }}
+          </v-btn>
+          <v-btn v-if="data.youtube" block prepend-icon="fa:fas fa-brands fa-youtube" elevation="1" color="primary"
+            target="_blank" :href="website">
+            {{ youtubeButtonLabel }}
           </v-btn>
           <v-btn v-if="website" block prepend-icon="mdi-open-in-new" elevation="1" color="primary" target="_blank"
             :href="website">

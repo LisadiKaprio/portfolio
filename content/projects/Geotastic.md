@@ -39,24 +39,23 @@ My favourite part was finding cluttered UI and making it more clear and more spa
 
 The multiplayer lobby settings display was also always confusing to me. And I wasn't the only one, as players often kept forgetting what settings were set up by the host, or didn't realize that the host has changed a certain setting. This happened because of the text clutter that was easy to gloss over, especially for casual players like myself. Because of this major flaw, redesigning this component was my top priority. Every setting got its dedicated descriptive icon on the panel, which can be hovered over to reveal details in a tooltip.
 
-::lightbox-images{:items='["geotastic-multiplayer"]'}
+::lightbox-images{:items='["geotastic-states", "geotastic-wiki-photo"]'}
 ::
 
-::lightbox-images{:items='["geotastic-states"]'}
-::
+Other tasks that I accomplished included:
+- improving country and state borders as geo-json files in QGIS
+- implementing capital marker when selecting a country or a state on the map
+- fetching and inserting a photo from the related wikipedia article on the results page
+- adding hotkeys on pages where they were missing
+- making sure the button labels and colors are consistent across pages to avoid user confusion
+- implementing new libraries to the project to add some features, such as lightbox and color picker
+- implementing new player information indicators
+- testing and recording bugs or impromevent suggestions on any new features added
 
+I also got to accomplish some design tasks, like creating vector banners, flags and icons.
 
-::lightbox-images{:items='["geotastic-multiplayer"]'}
-::
+Many minor bug fixes were accomplished, thanks to the new tool that I found and helped implement into the website, which is canny.io. It is located directly inside the browser, and users are able to leave bug reports or feature suggestions there. The posts that are being written can collect up- and down-votes, and initiate discussions between the community members and the developers.
 
-### Minor improvements of cluttered UI
+### What did I learn?
 
-favourite part was finding cluttered UI and making it more clear and spacious, making space to f.e. see the map, or just making the layout more spacious
-
-### Gathering player feedback and fixing bugs
-
-first directly through media like discord, or personal grudges that I thought would be good learning experience, since I had complete freedom with what I could work on and in what order. then implemented bug board
-
-list of bugs fixed: complete transition of website to dark mode, improving hitboxes in dedicated geo software to improve experience for pro players, various visual bugs, 
-
-### Learning experience based on an established large project
+The most important learning experience was getting to work on a large-scale project, study and imitate the existing code, adapt to coding conventions established by the main developer and learn from mistakes that I made and that were immediately pointed out to me.

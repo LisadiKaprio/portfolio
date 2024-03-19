@@ -29,6 +29,16 @@ p {
   line-height: 1.6;
 }
 
+ul {
+  padding-left: 32px;
+}
+
+li {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 a {
   text-decoration: none;
 }
@@ -228,6 +238,10 @@ a {
 
   p {
     margin: 12px 0px;
+  }
+
+  li {
+    margin: 8px 0px;
   }
 
   .cover {
