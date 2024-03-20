@@ -28,7 +28,7 @@ In this game, player can scroll through a tiny portion of a city filled with hou
 
 ### What was the goal?
 
-I joined a group of students at my uni, that each worked either in teams or on their own to create games and interactive experiences to make others aware of the ongoing war in Ukraine and to educate others on certain aspects of it. I had an urge to communicate the tragedy that comes with one's everyday life being suddenly interrupted by an enormous tragedy, without them ever expecting it.
+I joined a group of students at my university, that each worked either in teams or on their own to create games and interactive experiences to make others aware of the ongoing war in Ukraine and to educate others on certain aspects of it. I had an urge to communicate the tragedy that comes with one's everyday life being suddenly interrupted by an enormous tragedy, without them ever expecting it.
 
 
 ::lightbox-images{:items='["what-are-the-lives-3", "what-are-the-lives-4"]'}

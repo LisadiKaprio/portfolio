@@ -40,4 +40,4 @@ Most of the learning experience for me here was about the importance of testing 
 
 ### What am I proud of?
 
-This was my first experience writing a project with both frontend and backend from scratch, have them communicate successfully with each other as well as with Twitch, and have it run on a remote server 24/7 without any maintanence from my side. Even though it seemed to be an intimidating task at first, I am now feeling a bit more confident having accomplished that.
+This was my first experience writing a project with both frontend and backend from scratch, have them communicate successfully with each other as well as with Twitch, and have it run on a remote server 24/7 without any maintenance from my side. Even though it seemed to be an intimidating task at first, I am now feeling a bit more confident having accomplished that.

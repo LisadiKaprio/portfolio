@@ -21,9 +21,9 @@ website: geotastic.net
 
 ### What is it about?
 
-Geotastic is a Google Street View based browser game, known as a free alternative to another established browser game called Geoguessr. The basic concept is to guess where on the map you are based on a random Street View footage the player is given.Various game modes, single- and multiplayer, highscore records and community events are added on top of that, making it a sophisticated game project with large fanbase.
+Geotastic is a Google Street View based browser game, known as a free alternative to another established browser game called Geoguessr. The basic concept is to guess where on the map you are based on a random Street View footage the player is given. Various game modes, single- and multiplayer, high score records and community events are added on top of that, making it a sophisticated game project with a large fanbase.
 
-I initially got to know about this project through Twitch streams, in which the developer AnnoyingEdu himself was present either as a chatter, a guest or the streamer himself. I enjoyed getting to see the development process up close, and constantly contributed by providing bug reports and even creating artworks that got featured on the website as game assets.Naturally, when it was time to get my mandatory internship, spending this time contributing to Geotastic's code and design was my first choice.
+I initially got to know about this project through Twitch streams, in which the developer AnnoyingEdu himself was present either as a chatter, a guest or the streamer himself. I enjoyed getting to see the development process up close, and constantly contributed by providing bug reports and even creating artworks that got featured on the website as game assets. Naturally, when it was time to get my mandatory internship, spending this time contributing to Geotastic's code and design was my first choice.
 
 ### What tasks did I get to accomplish?
 
@@ -32,7 +32,7 @@ I have spent most of the internship improving user interface and fixing bugs. Th
 ::lightbox-images{:items='["/geotastic-login.png", "geotastic-login"]'}
 ::
 
-My favourite part was finding cluttered UI and making it more clear and more spacious. In the redesigned login/register window I focused on making it more familiar and closer to how such modals are usually designed and modeled, because I noticed myself as a user of this website getting confused whenever I opened this window.
+My favourite part was finding cluttered UI and making it more clear and more spacious. In the redesigned login/register window, I focused on making it more familiar and closer to how such modals are usually designed and modelled, because I noticed myself, as a user of this website, getting confused whenever I opened this window.
 
 ::lightbox-images{:items='["/geotastic-multiplayer.png"]'}
 ::
@@ -50,11 +50,11 @@ Other tasks that I accomplished included:
 - making sure the button labels and colors are consistent across pages to avoid user confusion
 - implementing new libraries to the project to add some features, such as lightbox and color picker
 - implementing new player information indicators
-- testing and recording bugs or impromevent suggestions on any new features added
+- testing and recording bugs or improvement suggestions on any new features added
 
 I also got to accomplish some design tasks, like creating vector banners, flags and icons.
 
-Many minor bug fixes were accomplished, thanks to the new tool that I found and helped implement into the website, which is canny.io. It is located directly inside the browser, and users are able to leave bug reports or feature suggestions there. The posts that are being written can collect up- and down-votes, and initiate discussions between the community members and the developers.
+Many minor bug fixes were accomplished, thanks to the new tool that I found and helped implement into the website, which is [canny.io](https://canny.io/). It is located directly on the Geotastic website, and users are able to leave bug reports or feature suggestions there. The posts that are being written can collect up- and down-votes, and initiate discussions between the community members and the developers.
 
 ### What did I learn?
 

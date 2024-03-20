@@ -15,7 +15,7 @@ tools:
   - Adobe Illustrator
 
 website: https://www.youtube.com/watch?v=cEvE3Qz-dMI
-websiteLabel: Watch full demonstation
+websiteLabel: Watch full demonstration
 ---
 
 ### What is it about?

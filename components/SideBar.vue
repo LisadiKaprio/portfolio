@@ -52,14 +52,7 @@ watch(() => route.path, () => {
     <div class="sidebar" :class="sidebarPositionClass">
         <Transition>
             <div v-if="isHomepage" class="socials">
-                <NuxtLink v-for="(item, idx) in socials" :key="idx" :to="`${item.url}`" target="_blank">
-                    <v-btn icon variant="outlined" class="socials-button-round">
-                        <v-icon>
-                            {{ `fa:fas fa-brands fa-${item.iconName}` }}
-                        </v-icon>
-                        <v-tooltip activator="parent" content-class='custom-tooltip'>{{ item.tooltipLabel }}</v-tooltip>
-                    </v-btn>
-                </NuxtLink>
+                <SocialButton v-for="(item, idx) in socials" :key="idx" :item="item" />
                 <div class="d-flex flex-row-reverse align-center justify-center">
                     <v-btn icon variant="outlined" @mouseover="hoverOverMail = true" @mouseleave="hoverOverMail = false"
                         class="socials-button-round mb-0" @click="copyMailToClipboard()">
