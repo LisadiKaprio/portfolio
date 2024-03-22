@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 const route = useRoute()
 
 const isHomepage = ref(route.path === '/')
@@ -25,6 +26,7 @@ watch(() => route.path, () => {
             </div>
         </div>
         <v-divider vertical />
+        <SpeedInsights />
         <div class="main-content" ref="mainContent">
             <slot />
         </div>
