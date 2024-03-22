@@ -2,8 +2,12 @@
 const route = useRoute()
 
 const isHomepage = ref(route.path === '/')
+const mainContent = ref<HTMLDivElement>()
 
 watch(() => route.path, () => {
+    if (mainContent.value) {
+        mainContent.value.scrollTop = 0
+    }
     isHomepage.value = (route.path === '/')
 }, { immediate: true, deep: true })
 </script>
@@ -21,7 +25,7 @@ watch(() => route.path, () => {
             </div>
         </div>
         <v-divider vertical />
-        <div class="main-content">
+        <div class="main-content" ref="mainContent">
             <slot />
         </div>
     </div>

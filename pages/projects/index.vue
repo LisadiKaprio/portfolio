@@ -3,6 +3,16 @@ import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 
 const { data: items } = await useAsyncData('items', () => queryContent('/projects').find())
 
+useHead({
+  title: 'Projects by Ariana Zeivald - Game Developer Portfolio',
+  meta: [
+    { name: 'description', content: 'I\'m a Game Design graduate in Berlin, developing web applications and creating 2D artworks.' }
+  ],
+  bodyAttrs: {
+    class: 'Portfolio'
+  },
+})
+
 let sortedItems: ParsedContent[]
 if (items.value) {
   sortedItems = items.value.sort((a: ParsedContent, b: ParsedContent) => {

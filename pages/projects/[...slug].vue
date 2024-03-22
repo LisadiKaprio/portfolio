@@ -21,6 +21,11 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
 
 <template>
   <div v-if="data" class="project-page">
+
+    <Head>
+      <Title>{{ `${data?.title} by Ariana Zeivald - Game Developer Portfolio` }}</Title>
+      <Meta name="description" :content="data?.subtitle ?? 'Game Developer Portfolio'" />
+    </Head>
     <div class="cover">
       <div class="cover-video">
         <VideoComponent :fileName="data.cover" />

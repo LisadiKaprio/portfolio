@@ -1,5 +1,13 @@
 <script lang="ts" setup>
-
+useHead({
+  title: 'Ariana Zeivald - Game Developer Portfolio',
+  meta: [
+    { name: 'description', content: 'I\'m a Game Design graduate in Berlin, developing web applications and creating 2D artworks.' }
+  ],
+  bodyAttrs: {
+    class: 'Portfolio'
+  },
+})
 </script>
 
 <template>
