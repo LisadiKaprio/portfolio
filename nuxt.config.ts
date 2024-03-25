@@ -18,6 +18,12 @@ export default defineNuxtConfig({
       })
     },
     '@nuxt/content',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        Roboto: true,
+      },
+      display: 'block'
+    }],
     // ...
   ],
   content: {
@@ -35,5 +41,5 @@ export default defineNuxtConfig({
     },
   },
   css: ['~/assets/main.scss'],
-  devtools: { enabled: true },
+  devtools: { enabled: true }
 })
