@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content/dist/runtime/types'
 
-const { data: items } = await useAsyncData('items', () => queryContent('/projects').find())
+const { data: items } = await useLazyAsyncData('items', () => queryContent('/projects').find())
 
 useHead({
   title: 'Projects by Ariana Zeivald - Game Developer Portfolio',
