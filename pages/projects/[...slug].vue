@@ -86,7 +86,7 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
         </div>
       </div>
       <v-divider />
-      <ContentRenderer :value="data" class="d-flex flex-column" />
+      <LazyContentRenderer :value="data" class="d-flex flex-column" />
     </div>
   </div>
 </template>

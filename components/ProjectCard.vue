@@ -7,7 +7,7 @@ const { item } = defineProps(['item']) as ParsedContent
 <template>
     <NuxtLink v-if="item" :to="`${item._path}`">
         <v-card min-width="280" height="100%" class="pa-4 flex-1">
-            <VideoComponent height="200px" width="100%" :fileName="item.cover" />
+            <VideoComponent loading="lazy" height="200px" width="100%" :fileName="item.cover" />
             <!-- <v-img :src="`/${item.cover}`" height="200px" cover /> -->
             <h3>
                 {{ item.title }}

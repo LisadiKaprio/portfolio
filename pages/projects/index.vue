@@ -32,7 +32,7 @@ if (items.value) {
       <v-data-iterator :items="sortedItems">
         <v-row no-gutters class="d-flex justify-center ">
           <v-col v-for="(item, i) in items" :key="i" class="mb-8 mr-8">
-            <ProjectCard :item="item" />
+            <LazyProjectCard :item="item" />
           </v-col>
         </v-row>
       </v-data-iterator>
