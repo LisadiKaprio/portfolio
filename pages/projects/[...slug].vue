@@ -28,7 +28,7 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
     </Head>
     <div class="cover">
       <div class="cover-video">
-        <VideoComponent :fileName="data.cover" />
+        <LightboxImages :items="[data.cover]" />
       </div>
       <!-- <img :src="`/${data.cover}`" :alt="data.coverAlt"> -->
       <div class="cover-title">

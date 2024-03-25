@@ -38,16 +38,17 @@ const copyMailToClipboard = () => {
         <!-- v-no-ssr is needed, otherwise hydration mismatch bug happens -->
         <v-no-ssr>
             <SocialButton v-for="(item, idx) in socials" :key="idx" :item="item" />
-            <div class="d-flex flex-row-reverse align-center justify-center">
+            <div class="email-container">
                 <v-btn icon variant="outlined" @mouseover="hoverOverMail = true" @mouseleave="hoverOverMail = false"
                     class="socials-button-round mb-0" @click="copyMailToClipboard()">
                     <v-icon>
                         {{ hoverOverMail ? `fa:fas fa-solid fa-copy` : `fa:fas fa-solid fa-envelope` }}
                     </v-icon>
-                    <v-tooltip activator="parent" content-class='custom-tooltip'>Copy My Email</v-tooltip>
+                    <v-tooltip activator="parent" content-class='custom-tooltip'
+                        :location="$vuetify.display.smAndDown ? 'bottom' : 'end'">Copy My Email</v-tooltip>
                 </v-btn>
                 <Transition>
-                    <span v-if="hoverOverMail" class="mr-2 dark-transparent-5">{{ MAIL }}</span>
+                    <span v-if="hoverOverMail" class="email dark-transparent-5">{{ MAIL }}</span>
                 </Transition>
             </div>
         </v-no-ssr>

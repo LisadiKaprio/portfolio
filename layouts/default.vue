@@ -15,6 +15,7 @@ watch(() => route.path, () => {
 
 <template>
     <div class="page-with-sidebar">
+        <span class="spacer-left"></span>
         <div class="sidebar-container">
             <div class="sidebar">
                 <Transition name="slide-fade">
@@ -30,6 +31,7 @@ watch(() => route.path, () => {
         <div class="main-content" ref="mainContent">
             <slot />
         </div>
+        <span class="spacer-right"></span>
     </div>
 </template>
 

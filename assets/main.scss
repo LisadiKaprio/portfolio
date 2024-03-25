@@ -51,7 +51,11 @@ a {
 
 .v-divider {
   color: $dark;
-  border-right-width: 2px;
+  border-width: 1px;
+
+  @media screen and (max-width: 960px) {
+    widht: 100%
+  }
 }
 
 .v-card {
@@ -138,31 +142,74 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 960px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  // little hack to offset the main content a bit to the left
+  // not sure if that's normal
+
+  .spacer-left {
+    flex: 1 1 10%;
+    height: 100px;
+
+    @media screen and (max-width: 1264px) {
+      display: none;
+    }
+  }
+
+  .spacer-right {
+    flex: 1 1 20%;
+    height: 100px;
+
+    @media screen and (max-width: 1264px) {
+      display: none;
+    }
+  }
 
   .sidebar-container {
     min-height: 100vh;
     display: flex;
 
+    @media screen and (max-width: 960px) {
+      min-height: 0px;
+      width: 100%;
+      justify-content: center;
+    }
+
     .sidebar {
       position: relative;
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      // width: 100%;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-start;
+      // max-width: 100%;
       min-width: 360px;
-      flex-basis: 0;
-      flex-grow: 1;
+      // flex-basis: 0;
+      // flex-grow: 1;
       padding: 24px 24px;
       transition: all 0.5s ease;
+
+      @media screen and (max-width: 960px) {
+        position: inherit;
+        width: 560px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding: 24px 24px 0px 24px;
+      }
 
       .portfolio-navigation {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-      }
 
-      .v-btn {
-        margin-bottom: 16px;
+        @media screen and (max-width: 960px) {
+          align-items: flex-start;
+        }
       }
     }
 
@@ -175,16 +222,47 @@ a {
       align-items: flex-end;
       justify-content: center;
 
+      @media screen and (max-width: 960px) {
+        position: unset;
+        justify-content: flex-start;
+        flex-direction: row;
+      }
+
       .socials-button-round {
         border-radius: 99px !important;
         height: 42px;
         width: 42px;
         color: $dark-transparent-3;
         -webkit-text-fill-color: $dark-transparent-4 !important;
+        margin-bottom: 16px;
+
+        @media screen and (max-width: 960px) {
+          margin-bottom: 0px;
+          margin-right: 8px;
+        }
 
         &:hover {
           color: $dark-transparent-4;
           -webkit-text-fill-color: $dark-transparent-5 !important;
+        }
+      }
+
+      .email-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: 960px) {
+          flex-direction: row;
+        }
+
+        .email {
+          margin-right: 8px;
+
+          @media screen and (max-width: 960px) {
+            margin-left: 8px;
+          }
         }
       }
     }
@@ -194,44 +272,55 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1000px;
+    width: 960px;
     height: 100vh;
     overflow: auto;
     padding: 24px 36px;
-  }
-}
 
-.homepage-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-
-  .intro-card {
-    width: 560px;
-    position: relative;
-    border-radius: 0px;
-
-    .intro-card-header-section {
-      padding: 16px 24px;
-      // background-color: $secondary;
+    @media screen and (max-width: 960px) {
+      width: 100%;
+      height: auto;
+      padding: 12px 0px 0px 0px;
     }
 
-    .intro-card-paragraph-section {
-      padding: 16px 24px;
-      -webkit-text-fill-color: $dark-transparent-95;
-    }
+    .homepage-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
 
-    .homepage-projects-button {
-      position: absolute;
-      bottom: -72px;
-      left: 0px;
-      animation: animate-float 1.2s ease-in-out infinite;
-      transition: transform 1s;
+      @media screen and (max-width: 960px) {
+        justify-content: flex-start;
+        height: auto;
+      }
 
-      &:hover {
-        animation: animate-hyper-float 1.2s ease-in-out infinite;
+      .intro-card {
+        max-width: 560px;
+        position: relative;
+        border-radius: 0px;
+
+        .intro-card-header-section {
+          padding: 16px 24px;
+          // background-color: $secondary;
+        }
+
+        .intro-card-paragraph-section {
+          padding: 16px 24px;
+          -webkit-text-fill-color: $dark-transparent-95;
+        }
+
+        .homepage-projects-button {
+          position: absolute;
+          bottom: -72px;
+          left: 0px;
+          animation: animate-float 1.2s ease-in-out infinite;
+          transition: transform 1s;
+
+          &:hover {
+            animation: animate-hyper-float 1.2s ease-in-out infinite;
+          }
+        }
       }
     }
   }
@@ -275,6 +364,11 @@ a {
   .intro {
     display: flex;
     flex-direction: row;
+
+    @media screen and (max-width: 960px) {
+      flex-direction: column-reverse;
+
+    }
 
     .project-card {
       flex: 1.35;
@@ -353,29 +447,33 @@ a {
       }
     }
 
-    .cover-title {
-      -webkit-text-fill-color: $background;
+    .cover-video {
+      width: 105%;
+      height: 100%;
+      transform: translate(-50%, -50%);
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+    }
 
-      background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.15) 100%);
+    .cover-title {
+      -webkit-text-fill-color: $background;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      // transform: translate(-50%, -50%);
+      width: 100%;
+
+      // background: linear-gradient(rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.75) 100%);
+      background-color: $dark-transparent-75;
       padding: 8px 12px;
-      backdrop-filter: blur(10px);
+      // backdrop-filter: blur(10px);
     }
   }
 }
 
 video {
   object-fit: cover;
-}
-
-.cover-video {
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 .lightbox-container-small {
@@ -415,10 +513,18 @@ video {
 
   transition: all 0.5s ease;
 
+  @media screen and (max-width: 960px) {
+    justify-content: center;
+
+  }
+
   .lightbox-image-big {
     display: block;
     max-height: 90vh;
-    // object-fit: contain;
+
+    @media screen and (max-width: 960px) {
+      max-width: 100%;
+    }
   }
 
   .lightbox-nav {
