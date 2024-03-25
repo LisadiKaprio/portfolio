@@ -1,10 +1,10 @@
 <script lang="ts" setup>
 const { path } = useRoute()
-const { data } = await useAsyncData(`content-${path}`, () => {
+const { pending, data } = await useLazyAsyncData(`content-${path}`, () => {
   return queryContent()
     .where({ _path: path })
     .findOne()
-})
+}, { server: false })
 
 const website = (data.value && data.value.website)
   ? data.value.website.startsWith('http')
@@ -17,6 +17,10 @@ const youtubeButtonLabel = (data.value && data.value.youtubeLabel) ?? 'Watch the
 const itchioButtonLabel = (data.value && data.value.itchioLabel) ?? 'Play in browser'
 
 const github = (data.value && data.value.github) ? `https://github.com/LisadiKaprio/${data.value.github}` : null
+
+watch(data, (newData) => {
+
+})
 </script>
 
 <template>
@@ -26,7 +30,8 @@ const github = (data.value && data.value.github) ? `https://github.com/LisadiKap
       <Title>{{ `${data?.title} by Ariana Zeivald - Game Developer Portfolio` }}</Title>
       <Meta name="description" :content="data?.subtitle ?? 'Game Developer Portfolio'" />
     </Head>
-    <div class="cover">
+    <v-progress-circular v-if="pending" indeterminate></v-progress-circular>
+    <div class="cover" v-else>
       <div class="cover-video">
         <LightboxImages :items="[data.cover]" />
       </div>
