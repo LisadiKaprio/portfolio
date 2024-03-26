@@ -19,7 +19,7 @@ watch(data, (newData) => {
     website = newData.website
       ? newData.website.startsWith('http')
         ? newData.website
-        : `https://${data.value.website}`
+        : `https://${newData.website}`
       : null
 
     websiteButtonLabel = (newData.websiteLabel) ?? 'Go to the website'
@@ -31,7 +31,7 @@ watch(data, (newData) => {
 
 <template>
   <div v-if="data" class="project-page">
-    <template v-if="pending">
+    <template v-if="pending || !data">
       <v-progress-circular indeterminate></v-progress-circular>
     </template>
     <template v-else>
@@ -44,7 +44,6 @@ watch(data, (newData) => {
         <div class="cover-video">
           <LightboxImages :items="[data.cover]" />
         </div>
-        <!-- <img :src="`/${data.cover}`" :alt="data.coverAlt"> -->
         <div class="cover-title">
           <h1>{{ data.title }}</h1>
         </div>
