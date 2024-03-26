@@ -489,13 +489,14 @@ a {
       filter: grayscale(0);
     }
   }
-}
 
-.project-card-video {
-  height: 200px;
+  .project-card-video {
+    height: 200px;
+    margin-bottom: 8px;
 
-  video {
-    width: 100%;
+    video {
+      width: 100%;
+    }
   }
 }
 

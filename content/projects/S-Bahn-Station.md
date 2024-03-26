@@ -18,6 +18,8 @@ tools:
 
 website: https://lisadikaprio.itch.io/i-made-my-local-train-station-in-unity
 websiteLabel: Download for Windows
+youtube: https://www.youtube.com/watch?v=Mz4hc7f9eO4
+youtubeLabel: Watch full demonstration
 ---
 
 ### What is it about?

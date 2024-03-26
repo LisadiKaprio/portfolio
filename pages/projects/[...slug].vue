@@ -7,6 +7,7 @@ const { pending, data } = await useLazyAsyncData(`content-${path}`, () => {
 }, { server: false })
 
 let website = ref('')
+let youtube = ref('')
 let websiteButtonLabel = ref('')
 let youtubeButtonLabel = ref('')
 let itchioButtonLabel = ref('')
@@ -21,6 +22,8 @@ watch(data, (newData) => {
         ? newData.website
         : `https://${newData.website}`
       : null
+
+    youtube = (newData.youtube) ?? ''
 
     websiteButtonLabel = (newData.websiteLabel) ?? 'Go to the website'
     youtubeButtonLabel = (newData.youtubeLabel) ?? 'Watch the trailer video'
@@ -85,7 +88,7 @@ watch(data, (newData) => {
               {{ itchioButtonLabel }}
             </v-btn>
             <v-btn v-if="data.youtube" block prepend-icon="fa:fas fa-brands fa-youtube" elevation="1" color="primary"
-              target="_blank" :href="website">
+              target="_blank" :href="youtube">
               {{ youtubeButtonLabel }}
             </v-btn>
             <v-btn v-if="website" block prepend-icon="mdi-open-in-new" elevation="1" color="primary" target="_blank"
