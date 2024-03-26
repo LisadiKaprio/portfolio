@@ -50,7 +50,7 @@ watch(data, (newData) => {
       </div>
       <div class="main">
         <div class="intro">
-          <div class="project-card" :elevation="2">
+          <div class="project-checklist" :elevation="2">
             <p class="font-weight-regular">
               {{ data.goal }}
             </p>

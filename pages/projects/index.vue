@@ -38,7 +38,7 @@ watch(items, (newItems) => {
       <v-data-iterator :items="sortedItems">
         <v-row no-gutters class="d-flex justify-center ">
           <v-col v-for="(item, i) in items" :key="i" class="mb-8 mr-8">
-            <LazyProjectCard :item="item" />
+            <LazyProjectCard :item="item" class="project-card" />
           </v-col>
         </v-row>
       </v-data-iterator>
