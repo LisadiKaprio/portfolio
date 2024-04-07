@@ -17,8 +17,6 @@ useHead({
 const sortedItems = ref<ParsedContent[]>()
 
 watch(items, (newItems) => {
-  console.log(items)
-  console.log(newItems)
   if (newItems) {
     sortedItems.value = newItems.sort((a: ParsedContent, b: ParsedContent) => {
       const dateA = new Date(a.created)

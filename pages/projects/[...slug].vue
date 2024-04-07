@@ -53,13 +53,13 @@ watch(data, (newData) => {
       </div>
       <div class="main">
         <div class="intro">
-          <div class="project-checklist" :elevation="2">
-            <p class="font-weight-regular">
-              {{ data.goal }}
+          <div class="project-checklist pr-2" :elevation="2">
+            <p class="font-weight-regular" v-if="data.goal">
+              <v-icon icon="mdi-flag-checkered"/> {{ data.goal }}
             </p>
             <div v-if="data.skills" class="card-section">
               <p class="font-weight-medium">
-                Skills:
+                <v-icon icon="mdi-brain"/> Skills:
               </p>
               <p class="mr-2">
                 {{ data.skills.join(', ') }}
@@ -67,7 +67,7 @@ watch(data, (newData) => {
             </div>
             <div v-if="data.tools" class="card-section">
               <p class="font-weight-medium">
-                Tools:
+                <v-icon icon="mdi-tools"/> Tools:
               </p>
               <p class="mr-2">
                 {{ data.tools.join(', ') }}
@@ -75,7 +75,7 @@ watch(data, (newData) => {
             </div>
             <div v-if="data.duration" class="card-section">
               <p class="font-weight-medium">
-                Duration:
+                <v-icon icon="mdi-clock"/> Duration:
               </p>
               <p class="mr-2">
                 {{ data.duration }}
