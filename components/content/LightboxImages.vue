@@ -38,12 +38,13 @@ const transparentRightIcon = computed(() => {
     </template>
     <template #default="{ isActive }">
       <div class="lightbox-overlay" @click="isActive.value = false">
-        <v-icon class="lightbox-nav" :class="transparentLeftIcon ? 'inactiveIconButton' : ''" icon="mdi-menu-left"
+        <v-icon class="lightbox-nav-close" icon="mdi-close"/>
+        <v-icon class="lightbox-nav nav-left" :class="transparentLeftIcon ? 'inactiveIconButton' : ''" icon="mdi-menu-left"
           @click.stop="!transparentLeftIcon ? currentItemIndex -= 1 : isActive.value = false" />
         <img v-if="currentItem && isImage(currentItem)" :src="currentItem" class="lightbox-image-big" />
         <lazy-video-component v-else-if="currentItem && !isImage(currentItem)" :fileName="currentItem"
           class="lightbox-image-big" />
-        <v-icon class="lightbox-nav" :class="transparentRightIcon ? 'inactiveIconButton' : ''" icon="mdi-menu-right"
+        <v-icon class="lightbox-nav nav-right" :class="transparentRightIcon ? 'inactiveIconButton' : ''" icon="mdi-menu-right"
           @click.stop="!transparentRightIcon ? currentItemIndex += 1 : isActive.value = false" />
       </div>
     </template>
