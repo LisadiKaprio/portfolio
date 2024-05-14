@@ -12,7 +12,7 @@ tools:
   - Vue.js
   - Typescript
   - Nuxt
-duration: 2 months, still being updated
+duration: 1 month, still being updated
 
 github: portfolio
 ---
