@@ -11,11 +11,6 @@ const currentItem = computed(() => {
   else return null
 })
 
-const isImage = (fileName: string) => {
-  if (fileName.endsWith('.png') || fileName.endsWith('.jpg')) return true
-  return false
-}
-
 const transparentLeftIcon = computed(() => {
   return (currentItemIndex.value <= 0)
 })
@@ -31,7 +26,7 @@ const transparentRightIcon = computed(() => {
     <template #activator="{ props: activatorProps }">
       <v-container class="lightbox-container-small">
         <v-col v-for="(item, idx) in items" :key="idx" class="lightbox-image-small-wrapper" v-bind="activatorProps">
-          <img v-if="isImage(item)" :src="item" contain class="lightbox-image-small" @click="currentItemIndex = idx">
+          <img v-if="isImage(item)" :src="`/${item}`" contain class="lightbox-image-small" @click="currentItemIndex = idx">
           <lazy-video-component v-else :fileName="item" class="lightbox-image-small" @click="currentItemIndex = idx" />
         </v-col>
       </v-container>
@@ -41,7 +36,7 @@ const transparentRightIcon = computed(() => {
         <v-icon class="lightbox-nav-close" icon="mdi-close"/>
         <v-icon class="lightbox-nav nav-left" :class="transparentLeftIcon ? 'inactiveIconButton' : ''" icon="mdi-menu-left"
           @click.stop="!transparentLeftIcon ? currentItemIndex -= 1 : isActive.value = false" />
-        <img v-if="currentItem && isImage(currentItem)" :src="currentItem" class="lightbox-image-big" />
+        <img v-if="currentItem && isImage(currentItem)" :src="`/${currentItem}`" class="lightbox-image-big" />
         <lazy-video-component v-else-if="currentItem && !isImage(currentItem)" :fileName="currentItem"
           class="lightbox-image-big" />
         <v-icon class="lightbox-nav nav-right" :class="transparentRightIcon ? 'inactiveIconButton' : ''" icon="mdi-menu-right"

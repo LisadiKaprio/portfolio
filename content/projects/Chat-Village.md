@@ -15,6 +15,7 @@ tools:
   - Typescript
   - Vue.js
   - Paint Tool SAI
+  - SQL
 duration: 6 months, being updated to this day
 
 website: chatvillage.de

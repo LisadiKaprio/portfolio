@@ -540,6 +540,7 @@ video {
 .lightbox-container-small {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 24px 0px !important;
   // margin: 16px 0px;
 }
