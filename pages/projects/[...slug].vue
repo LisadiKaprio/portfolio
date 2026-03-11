@@ -109,5 +109,4 @@ watch(data, (newData) => {
 </template>
 
 <style lang="scss">
-@import "../assets/main";
 </style>

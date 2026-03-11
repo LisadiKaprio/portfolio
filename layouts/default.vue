@@ -36,5 +36,4 @@ watch(() => route.path, () => {
 </template>
 
 <style lang="scss">
-@import "../assets/main";
 </style>
