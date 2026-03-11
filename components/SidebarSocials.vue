@@ -4,16 +4,19 @@ const socials = [
     {
         iconName: 'github',
         tooltipLabel: 'Github',
+        tooltipParagraph: 'My coding projects',
         url: 'https://github.com/LisadiKaprio/',
     },
     {
         iconName: 'itch-io',
         tooltipLabel: 'Itch.io',
+        tooltipParagraph: 'My games and game assets',
         url: 'https://lisadikaprio.itch.io/',
     },
     {
         iconName: 'artstation',
         tooltipLabel: 'Artstation',
+        tooltipParagraph: 'My art projects',
         url: 'https://www.artstation.com/lisadikaprio',
     },
     {

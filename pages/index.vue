@@ -2,7 +2,7 @@
 useHead({
   title: 'Ariana Zeivald - Game Developer Portfolio',
   meta: [
-    { name: 'description', content: 'I\'m a Game Design graduate in Berlin, developing web applications and creating 2D artworks.' }
+    { name: 'description', content: 'I\'m a game developer and 2D artist in Berlin, creating web applications and 2D artworks.' }
   ],
   bodyAttrs: {
     class: 'Portfolio'
@@ -15,15 +15,14 @@ useHead({
     <v-sheet class="intro-card" :elevation="4" rounded>
       <div class="intro-card-header-section">
         <h1>Ariana Zeivald</h1>
-        <p>You can call me Ari or Lisa.</p>
+        <p>Game developer and artist in Berlin</p>
       </div>
       <v-divider></v-divider>
       <div>
         <p class="intro-card-paragraph-section">
-          💻🎨 I'm a Game Design graduate in Berlin, developing web applications and creating 2D artworks.
-          <br /> 🔧 I have a strong passion for finding and fixing bugs.
-          <br /><br /> 💜 My biggest hobby is participating in Twitch streams, which is reflected in most of my
-          projects.
+          💻🎨 I create web applications, games and 2D artworks.
+          <br /> 🔧 I have a passion for finding (and fixing?) bugs.
+          <br /><br /> 💜 Other hobbies include reading books, doing crafts, playing games, lurking on Twitch streams.
         </p>
       </div>
       <NuxtLink to="/projects">

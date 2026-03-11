@@ -11,7 +11,7 @@ const { item } = defineProps(['item']) as ParsedContent
                 {{ `fa:fas fa-brands fa-${item.iconName}` }}
             </v-icon>
             <v-tooltip activator="parent" content-class='custom-tooltip'
-                :location="$vuetify.display.smAndDown ? 'bottom' : 'end'">{{ item.tooltipLabel }}</v-tooltip>
+                :location="$vuetify.display.smAndDown ? 'bottom' : 'end'">{{ item.tooltipLabel }}<p class="tooltip-paragraph" v-if="item.tooltipParagraph">{{ item.tooltipParagraph }}</p></v-tooltip>
         </v-btn>
     </NuxtLink>
 </template>
