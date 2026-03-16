@@ -10,7 +10,8 @@ $dark-transparent-5: rgba(30, 17, 4, 0.5);
 $dark-transparent-4: rgba(30, 17, 4, 0.4);
 $dark-transparent-3: rgba(30, 17, 4, 0.3);
 
-html {
+// html tag doesn't seem to work anymore
+body {
   font-family: 'Roboto Mono', monospace;
   -webkit-text-fill-color: $dark;
 }

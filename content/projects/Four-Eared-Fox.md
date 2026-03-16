@@ -28,7 +28,7 @@ This is a visual novel about taking care of a little fox-girl and helping her ge
 
 To facilitate the energetic and lively mood that the fox-girl brings forth, our team put special attention into making her character sprite move a lot on screen and show as much emotion as possible not only through visuals, but through subtle animation and sound effects as well.
 
-::lightbox-images{:items='["four-eared-fox-1", "/four-eared-fox-screenshot.png"]'}
+::lightbox-images{:items='["four-eared-fox-1", "four-eared-fox-screenshot.png"]'}
 ::
 
 The interface also acts as a way to further involve the player into the atmosphere of the game. Best example of this is how the main menu shows the information stand of the park that the main character visits, and, when starting the game, the interface moves to reveal more of the park, until it finally shows the pond that the story starts at.

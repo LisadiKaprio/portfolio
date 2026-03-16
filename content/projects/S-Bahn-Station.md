@@ -38,12 +38,12 @@ This project allowed me to learn from very embarrassing mistakes, for example cr
 ::lightbox-images{:items='["station-stairs"]'}
 ::
 
-Another embarrassing mistake was the way I created whole staircase with the rails as one single asset, which made it way too heavy and impossible to uniquely texture in Substance 3D Painter. Building the staircase inside of the game engine from a set of modular assets would have allowed for easier detailed texturing, as well as general customizability inside of the level.
+Another embarrassing mistake was the way I created the whole staircase with the rails as one single asset, which made it way too heavy and impossible to uniquely texture in Substance 3D Painter. Building the staircase inside of the game engine from a set of modular assets would have allowed for easier detailed texturing, as well as general customizability inside of the level.
 
 ::lightbox-images{:items='["station-interactivity"]'}
 ::
 
-I also learned the basic of creating a first-person 3D game experience, with features like pushing objects and placing items inside of the level, in this case graffities on walls. 
+I also learned the basics of creating a first-person 3D game experience, with features like pushing objects and placing items inside of the level, in this case graffities on walls. 
 
 ::lightbox-images{:items='["station-interface"]'}
 ::

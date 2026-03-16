@@ -21,8 +21,8 @@ useHead({
       <div>
         <p class="intro-card-paragraph-section">
           💻🎨 I create web applications, games and 2D artworks.
-          <br /> 🔧 I have a passion for finding (and fixing?) bugs.
-          <br /><br /> 💜 Other hobbies include reading books, doing crafts, playing games, lurking on Twitch streams.
+          <br /> 🔧 I have a passion for finding and fixing bugs.
+          <br /><br /> 💜 Other hobbies include reading books, doing crafts, and completing game achievements.
         </p>
       </div>
       <NuxtLink to="/projects">
