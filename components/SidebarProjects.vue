@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio-navigation">
+    <div class="portfolio-navigation" style="z-index: 2;">
         <NuxtLink :to="`/`">
             <v-btn color="primary" class="mb-4" elevation="0">
                 <h1>Ariana Zeivald</h1>

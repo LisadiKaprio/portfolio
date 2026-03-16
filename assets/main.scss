@@ -679,3 +679,29 @@ video {
     cursor: default;
   }
 }
+
+.corner-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+    opacity: 0.5;
+}
+
+.corner-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+    opacity: 0.5;
+}
+.corner-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+    opacity: 0.5;
+}
+.corner-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+    opacity: 0.5;
+}

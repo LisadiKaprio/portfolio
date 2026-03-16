@@ -29,7 +29,9 @@ watch(items, (newItems) => {
 
 <template>
   <div class="d-flex flex-column">
-    <h1 class="mb-8">
+    <img :src="`/corner-art-1.png`" class="corner-top-left">
+    <img :src="`/corner-art-2.png`" class="corner-bottom-right">
+    <h1 class="mb-8" style="z-index: 2;">
       Art Projects
     </h1>
     <template v-if="!pending && sortedItems">

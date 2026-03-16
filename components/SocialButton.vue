@@ -6,7 +6,7 @@ const { item } = defineProps(['item']) as ParsedContent
 
 <template>
     <NuxtLink :to="`${item.url}`" target="_blank">
-        <v-btn icon variant="outlined" class="socials-button-round">
+        <v-btn icon variant="outlined" class="socials-button-round" style="z-index: 2;">
             <v-icon>
                 {{ `fa:fas fa-brands fa-${item.iconName}` }}
             </v-icon>
