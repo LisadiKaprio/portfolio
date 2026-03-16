@@ -1,13 +1,18 @@
 <template>
     <div class="portfolio-navigation">
         <NuxtLink :to="`/`">
-            <v-btn color="primary mb-2" elevation="0">
+            <v-btn color="primary" class="mb-4" elevation="0">
                 <h1>Ariana Zeivald</h1>
             </v-btn>
         </NuxtLink>
-        <NuxtLink to="/projects">
+        <NuxtLink to="/art">
+            <v-btn color="primary" class="mb-2" elevation="0">
+                🎨 Art
+            </v-btn>
+        </NuxtLink>
+        <NuxtLink to="/code">
             <v-btn color="primary" elevation="0">
-                My Projects
+                💻 Code
             </v-btn>
         </NuxtLink>
     </div>

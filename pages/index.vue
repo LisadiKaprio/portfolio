@@ -25,13 +25,22 @@ useHead({
           <br /><br /> 💜 Other hobbies include reading books, doing crafts, and completing game achievements.
         </p>
       </div>
-      <NuxtLink to="/projects">
-        <Transition>
-          <v-btn class="homepage-projects-button" size="x-large" color="primary" elevation="0">
-            My Projects
-          </v-btn>
-        </Transition>
-      </NuxtLink>
+      <div class="homepage-projects-buttons">
+        <NuxtLink to="/art">
+          <Transition>
+            <v-btn class="floating-button" size="x-large" color="primary" elevation="0">
+              🎨 Art Projects
+            </v-btn>
+          </Transition>
+        </NuxtLink>
+        <NuxtLink to="/code">
+          <Transition>
+            <v-btn class="floating-button" size="x-large" color="primary" elevation="0">
+              💻 Code Projects
+            </v-btn>
+          </Transition>
+        </NuxtLink>
+      </div>
     </v-sheet>
   </v-container>
 </template>

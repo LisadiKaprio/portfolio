@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { ParsedContent } from '@nuxt/content'
 
-const { pending, data: items } = await useLazyAsyncData('items', () => queryContent('/projects').find()
+const { pending, data: items } = await useLazyAsyncData('art-items', () => queryContent('/art').find()
   , { server: false })
 
 useHead({
-  title: 'Projects by Ariana Zeivald - Game Developer Portfolio',
+  title: 'Art Projects by Ariana Zeivald - Game Developer Portfolio',
   meta: [
-    { name: 'description', content: 'I\'m a Game Design graduate in Berlin, developing web applications and creating 2D artworks.' }
+    { name: 'description', content: 'Explore my art projects including game art, 3D modeling, visual novels, and interactive stories.' }
   ],
   bodyAttrs: {
     class: 'Portfolio'
@@ -30,7 +30,7 @@ watch(items, (newItems) => {
 <template>
   <div class="d-flex flex-column">
     <h1 class="mb-8">
-      Projects
+      Art Projects
     </h1>
     <template v-if="!pending && sortedItems">
       <v-data-iterator :items="sortedItems">

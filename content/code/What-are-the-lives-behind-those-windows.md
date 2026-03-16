@@ -20,7 +20,7 @@ github: p5houses
 
 ### What is it about?
 
-In this game, player can scroll through a tiny portion of a city filled with houses, with some of the windows in the buildings being lit up. Clicking on those reveals a snapshot of the family's life there.
+In this game, the player can scroll through a tiny portion of a city filled with houses, with some of the windows in the buildings being lit up. Clicking on those reveals a snapshot of the family's life there.
 
 
 ::lightbox-images{:items='["what-are-the-lives-2"]'}

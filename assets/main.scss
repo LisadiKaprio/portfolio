@@ -13,7 +13,7 @@ $dark-transparent-3: rgba(30, 17, 4, 0.3);
 // html tag doesn't seem to work anymore
 body {
   font-family: 'Roboto Mono', monospace;
-  -webkit-text-fill-color: $dark;
+  // -webkit-text-fill-color: $dark;
 }
 
 h1,
@@ -318,15 +318,38 @@ a {
           -webkit-text-fill-color: $dark-transparent-95;
         }
 
-        .homepage-projects-button {
+        .homepage-projects-buttons {
           position: absolute;
           bottom: -72px;
           left: 0px;
-          animation: animate-float 1.2s ease-in-out infinite;
-          transition: transform 1s;
 
-          &:hover {
+          display: flex;
+          // flex-direction: column;
+          gap: 1rem;
+          margin-top: 1rem;
+          flex-wrap: wrap;
+
+          a {
+            flex: 1;
+            min-width: 200px;
+          }
+
+          .floating-button {
+            animation: animate-float 1.2s ease-in-out infinite;
+            transition: transform 1s;
+
+            // &:hover {
+            //   animation: animate-hyper-float 1.2s ease-in-out infinite;
+            // }
+          }
+
+          .hyper-floating-button {
             animation: animate-hyper-float 1.2s ease-in-out infinite;
+            transition: transform 1s;
+
+            // &:hover {
+            //   animation: animate-hyper-float 1.2s ease-in-out infinite;
+            // }
           }
         }
       }
@@ -486,15 +509,10 @@ a {
   video {
     transition: all 0.1s linear;
     filter: grayscale(0.25);
-  }
 
   &:hover {
-    color: $dark-transparent-95;
-    -webkit-text-fill-color: $dark-transparent-95 !important;
-
-    video {
       filter: grayscale(0);
-    }
+  }
   }
 
   .project-card-video {
@@ -504,7 +522,13 @@ a {
     video {
       width: 100%;
     }
+
   }
+}
+
+.project-card-subtitle {
+  color: $dark-transparent-5;
+  font-size: 13px;
 }
 
 .video-component-wrapper {
