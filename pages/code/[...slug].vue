@@ -43,6 +43,8 @@ watch(data, (newData) => {
         <Title>{{ `${data?.title} by Ariana Zeivald - Game Developer Portfolio` }}</Title>
         <Meta name="description" :content="data?.subtitle ?? 'Game Developer Portfolio'" />
       </Head>
+    <img src="/corner-code-2.png" class="corner-top-right">
+    <img src="/corner-code-1.png" class="corner-bottom-left">
       <div class="cover">
         <div class="cover-video">
           <LightboxImages :items="[data.cover]" />

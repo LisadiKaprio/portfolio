@@ -3,6 +3,7 @@
 $background: #f7f7f7;
 $primary: #dc740b;
 $secondary: rgb(244, 202, 152);
+$secondary-50: rgb(244, 202, 152, 0.5);
 $dark: #1e1104;
 $dark-transparent-95: rgba(30, 17, 4, 0.95);
 $dark-transparent-75: rgba(30, 17, 4, 0.75);
@@ -685,6 +686,7 @@ video {
   top: 0;
   left: 0;
     opacity: 0.5;
+animation: fadein 2s ease forwards;
 }
 
 .corner-top-right {
@@ -692,16 +694,29 @@ video {
   top: 0;
   right: 0;
     opacity: 0.5;
+animation: fadein 2s ease forwards;
 }
 .corner-bottom-left {
   position: absolute;
   bottom: 0;
   left: 0;
     opacity: 0.5;
+animation: fadein 2s ease forwards;
 }
 .corner-bottom-right {
   position: absolute;
   bottom: 0;
   right: 0;
     opacity: 0.5;
+animation: fadein 2s ease forwards;
+}
+
+@keyframes fadein {
+from { opacity: 0; }
+to { opacity: 0.5; }
+}
+
+.selected {
+  transform: translate(20px, 0px);
+  background-color: $secondary-50 !important;
 }

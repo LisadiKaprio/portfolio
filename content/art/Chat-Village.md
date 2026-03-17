@@ -1,6 +1,6 @@
 ---
 title: Chat Village
-subtitle: Twitch Stream Widgets with 2D Characters
+subtitle: Animated 2D Characters
 
 created: 2023-09-30
 
