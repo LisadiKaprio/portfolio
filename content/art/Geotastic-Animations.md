@@ -1,8 +1,8 @@
 ---
-title: Animated Animals for Geotastic
-subtitle: Promotional Images
+title: Animated Animals for Halloween
+subtitle: Promotional 2D Animations
 created: 2023-10-31
-cover: geotastic-animals.gif
+cover: animated-animals
 ---
 
 
